@@ -1,0 +1,3003 @@
+@charset "utf-8";
+.imgL {
+    float: left;
+    margin: 0 0 10px 15px;
+}
+.imgR {
+    float: right;
+    margin: 0 0 10px 15px;
+}
+
+
+/*---------------------------------------
+ 組織図start
+-------------------------------------- */
+
+#soshikizu_tbl td {
+	margin:0;
+	padding:0;
+	vertical-align:middle;
+	line-height:1;
+	border:none;
+}
+#soshikizu_tbl .box1,
+#soshikizu_tbl .box2,
+#soshikizu_tbl .box3,
+#soshikizu_tbl .box4,
+#soshikizu_tbl .box5,
+#soshikizu_tbl .box6,
+#soshikizu_tbl .box7,
+#soshikizu_tbl .box8
+ {
+	border:1px solid #999999;
+	margin:6px 0;
+	padding:4px 14px;
+	text-align:left;
+	font-size:.875em;
+	line-height:1.2;
+}
+#soshikizu_tbl .box9{
+	margin-left:20px;
+	text-align:left;
+	font-size:.800em;
+	line-height:1.2;
+}
+#soshikizu_tbl .sosiki_into{
+	margin-right:5px;
+	vertical-align:middle;
+	font-size:.700em;
+	color:#2060a0;
+	line-height:1.2;
+}
+#soshikizu_tbl .box1 {
+          background: #E5E1EE;
+	width:120px;
+}
+#soshikizu_tbl .box2 {
+          background: #CCFF99;
+	width:180px;
+}
+#soshikizu_tbl .box3 {
+          background: #FFFF99;
+}
+#soshikizu_tbl .box4 {
+          background: #FF99CC;
+}
+#soshikizu_tbl .box5 {
+          background: #33CCCC;
+}
+#soshikizu_tbl .box6 {
+
+          background: #FFE699;
+}
+#soshikizu_tbl .box7 {
+          background: #CC99FF;
+}
+#soshikizu_tbl .box8 {
+          background: #B4C6E7;
+}
+
+#soshikizu_tbl td.chart-line_1010,
+#soshikizu_tbl td.chart-line_0101,
+#soshikizu_tbl td.chart-line_1110,
+#soshikizu_tbl td.chart-line_1100,
+#soshikizu_tbl td.chart-line_0111,
+#soshikizu_tbl td.chart-line_0110,
+#soshikizu_tbl td.chart-line_1001,
+#soshikizu_tbl td.chart-line_1101,
+#soshikizu_tbl td.chart-line_0011,
+#soshikizu_tbl td.chart-line_1111,
+#soshikizu_tbl td.chart-line_8,
+#soshikizu_tbl td.chart-line_9,
+#soshikizu_tbl td.chart-line_10 {
+	background-position:center center;
+	background-repeat:no-repeat;
+	text-indent:-99999px;
+	width:80px;
+}
+
+#soshikizu_tbl td.chart-line_0101_lg{
+	background-position:center center;
+	background-repeat:no-repeat;
+	text-indent:-99999px;
+	width:270px;
+}
+
+#soshikizu_tbl td.chart-line_1010 {
+	background-image:url(/img/chart/chart-line_1010.gif);	
+}
+#soshikizu_tbl td.chart-line_0101 {
+	background-image:url(/img/chart/chart-line_0101.gif);	
+}
+#soshikizu_tbl td.chart-line_0101_lg {
+	background-image:url(/img/chart/chart-line_0101.gif);	
+}
+#soshikizu_tbl td.chart-line_1110 {
+	background-image:url(/img/chart/chart-line_1110.gif);	
+}
+#soshikizu_tbl td.chart-line_1100 {
+	background-image:url(/img/chart/chart-line_1100.gif);	
+}
+#soshikizu_tbl td.chart-line_0111 {
+	background-image:url(/img/chart/chart-line_0111.gif);	
+}
+#soshikizu_tbl td.chart-line_0110 {
+	background-image:url(/img/chart/chart-line_0110.gif);	
+}
+#soshikizu_tbl td.chart-line_1001 {
+	background-image:url(/img/chart/chart-line_1001.gif);	
+}
+#soshikizu_tbl td.chart-line_1101 {
+	background-image:url(/img/chart/chart-line_1101.gif);	
+}
+#soshikizu_tbl td.chart-line_0011 {
+	background-image:url(/img/chart/chart-line_0011.gif);	
+}
+#soshikizu_tbl td.chart-line_1111 {
+	background-image:url(/img/chart/chart-line_1111.gif);	
+}
+
+
+/*---------------------------------------
+ 組織図end
+-------------------------------------- */
+
+/*---------------------------------------
+ magicconnect start
+-------------------------------------- */
+
+/*
+
+*/
+
+
+
+@media (max-width: 1199px) {
+}
+ 
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 575px) {
+}
+
+
+
+.inner {
+	max-width: 1000px;
+	padding: 0px 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (max-width: 1199px) {
+}
+ 
+@media (max-width: 991px) {
+/*	body {
+		font-size: 14px;
+		line-height: 1.98;
+	}
+*/
+}
+
+@media (max-width: 767px) {
+/*
+	p {
+		margin: .8em 0em;
+	}
+
+	.inner {
+		padding: 0px 10px;
+	}
+*/
+}
+
+@media (max-width: 576px) and (min-width: 768px) {
+/*	body {
+		font-size: 12px;
+		line-height: 1.98;
+	}
+*/	
+}
+
+@media (max-width: 575px) {
+/*	body {
+		font-size: 12px;
+		line-height: 1.6;
+	}
+*/	
+}
+
+
+
+
+
+
+@media (min-width: 993px) {
+
+	.only-tb {
+		display: none;
+	}
+
+	.only-sp {
+		display: none;
+	}
+
+	.ps-none {
+		display: none;
+	}
+
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+
+	.only-pc {
+		display: none;
+	}
+
+	.only-sp {
+		display: none;
+	}
+
+	.tb-none {
+		display: none;
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	.only-pc {
+		display: none;
+	}
+
+	.only-tb {
+		display: none;
+	}
+
+	.sp-none {
+		display: none;
+	}
+
+}
+
+
+/*
+
+#通常コンテンツ
+
+*/
+
+.contents:before,
+.contents:after {
+	content: '';
+	display: table;
+}
+
+.contents .inner {
+	margin: 90px auto 90px;
+}
+
+.contents__title-block {
+	margin-bottom: 25px;
+}
+
+@media (max-width: 767px) {
+
+	.contents .inner {
+		margin: 40px auto 40px;
+	}
+
+	.contents__title-block {
+		line-height: 1.3;
+		margin-bottom: 15px;
+	}
+
+}
+
+/*
+
+#グレー背景のコンテンツ
+
+*/
+
+.contents-bg {
+	background: #e1dede;
+}
+
+.contents-bg:before,
+.contents-bg:after {
+	content: '';
+	display: table;
+}
+
+.contents-bg .inner {
+	margin: 45px auto 45px;
+}
+
+@media (max-width: 767px) {
+
+	.contents-bg .inner {
+		margin: 25px auto 25px;
+	}
+
+}
+
+/* #〓〓〓〓〓 パーツ 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+.contents__title {
+	font-size: 280%;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	line-height: 1.5em;
+	font-feature-settings: "palt";	
+}
+
+.contents__title rt {
+	padding: 0px 140px;
+	font-size: 40%;
+}
+
+.title__number {
+	padding-right: .4em;
+}
+
+.figure {
+	margin: 56px auto 0px;
+}
+
+.text-cell {
+	display: inline-block;
+}
+
+.fontspace05 {
+	letter-spacing: 0.03em;
+}
+ 
+@media (max-width: 991px) {
+
+	.contents__title rt {
+		padding: 0px 105px;
+	}
+
+}
+
+@media (max-width: 575px) {
+	
+	.contents__title rt {
+		padding: 0px 80px;
+	}
+}
+
+/*
+
+#emphasis-text and #description-text
+
+*/
+
+.emphasis-text {
+	font-size: 180%;/* これより大きくすると、2行になってカッコ悪い */
+	line-height: 1.5;
+	font-feature-settings: "palt";/* 要検証 */
+	letter-spacing: .02em;
+}
+
+.emphasis-text strong {
+	font-weight: bold;
+	color: #d12433;
+}
+
+.description-text {
+	margin-bottom: 20px;
+	font-size: 140%;
+	line-height: 1.5;
+	font-feature-settings: "palt";/* 要検証 */
+	letter-spacing: .02em;
+}
+
+.description-text strong {
+	font-weight: bold;
+	color: #000000;
+}
+
+@media (max-width: 767px) {
+
+	.figure {
+		margin: 25px auto 0px;
+	}
+
+	.description-text {
+		margin-bottom: 10px;
+	}
+}
+
+/*
+
+.arrow .triangle
+
+*/
+
+.arrow-down {
+	margin: 0px auto 0px;
+	width: 15px;
+	height: 15px;
+	border: 3px solid;
+	border-color: transparent transparent #FFFFFF #FFFFFF;
+	transform: rotate(-45deg); 
+}
+
+.triangle-down {
+	margin: 30px auto;
+	width: 0px;
+	height: 0px;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 30px solid black;
+}
+
+@media (max-width: 1039px) {
+
+	.arrow-down {
+		width: 12px;
+		height: 12px;
+		border: 2px solid;
+		border-color: transparent transparent #FFFFFF #FFFFFF;
+		transform: rotate(-45deg); 
+	}
+
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+	
+	.triangle-down {
+		position: absolute;
+		margin: 100px 0px 0px 250px;
+		border-left: 20px solid black;
+		border-top: 20px solid transparent;
+		border-bottom: 20px solid transparent;	
+	}
+
+}
+
+@media (max-width: 575px) {
+	
+	.triangle-down {
+		position: absolute;
+		margin: 65px 0px 0px 159px;
+		border-left: 12px solid black;
+		border-top: 12px solid transparent;
+		border-bottom: 12px solid transparent;	
+	}
+	
+}
+
+/* #〓〓〓〓〓 ヘッダー 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+.header_inner {
+	max-width: 1000px;
+	margin: 0px auto;
+	padding: 0px 10px;
+}
+
+.header_contents {
+	padding: 10px 0px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+			justify-content: space-between;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+}
+
+.header_contact_text {
+	margin: 0px;
+	padding: 0em .4em;
+	font-weight: bold;
+	font-size: 14px;
+	/* line-height: 1.6; */
+	/*
+	-webkit-font-feature-settings: "palt";
+			font-feature-settings: "palt";
+	letter-spacing: .03em;
+	*/
+	/* boldより太くしたい */
+	-moz-osx-font-smoothing: auto;
+	-webkit-font-smoothing: subpixel-antialiased;
+		font-smoothing: subpixel-antialiased;
+}
+
+.header_contact_btn {
+	display: block;
+	vertical-align: top;
+	text-decoration: none;
+	font-weight: bold;
+	color: inherit;
+	font-size: 18px;
+	padding: 6px 30px;
+	background: #ff9320;
+	color: #fff;
+	border: 4px solid #ffc62e;
+	position: relative;
+	box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.08);
+	/* boldより太くしたい */
+	-moz-osx-font-smoothing: auto;
+	-webkit-font-smoothing: subpixel-antialiased;
+		font-smoothing: subpixel-antialiased;
+}
+
+.header_contact_btn:after {
+	content: '';
+	display: block;
+	background: url(/img/magicconnect/ico_arrow.svg) center no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	right: 6px;
+	width: 12px;
+	height: 12px;
+}
+
+.header_contact_btn_text {
+	/*position: relative;
+	padding-left: 32px;*/
+	padding-left: 15px;
+}
+
+.header_contact_btn:before {
+	content: '';
+	display: block;
+	background: url(/img/magicconnect/ico_mail.svg) center no-repeat;
+	background-size: contain;
+	width: 24px;
+	height: 16px;
+	position: absolute;
+	left: 15px;
+	top: 50%;
+	transform: translate(0,-50%);
+}
+
+@media (max-width: 1199px) {
+}
+ 
+@media (max-width: 991px) {
+	.header_corporate_logo img {
+		height: 50px;
+	}
+}
+
+@media (max-width: 767px) {
+	
+	.header_corporate_logo img {
+		height: 25px;
+	}
+
+	.header_contents {
+		padding: 5px 0px;
+	}
+
+	.header_contact_text {
+		display: none;
+	}
+
+	.header_contact_btn {
+		padding: 6px 10px 4px;
+		border-width: 2px;
+	}
+
+	.header_contact_btn:before {
+		display: block;
+		position: static;
+		margin: 0px auto;
+		transform: translate(0,0);
+		width: 18px;
+		height: 12px;
+	}
+
+	.header_contact_btn:after {
+		content: none;
+	}
+
+	.header_contact_btn_text {
+		display: block;
+		margin: .8em 0em 0em;
+		padding: 0px;
+		font-size: 6px;
+		line-height: 1;
+	}
+
+}
+
+@media (max-width: 575px) {
+}
+
+/*
+.contact__link-text {
+	display: inline-block;
+	position: relative;
+	padding: 0px 64px;
+}
+
+.contact__link-text:before {
+	content: '';
+	display: block;
+	background: url(/img/magicconnect/ico_mail.svg) center no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	left: 0;
+	width: 38px;
+	height: 38px;
+}
+*/
+
+/* #〓〓〓〓〓 フッター 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+.page_bottom {
+	border-bottom: 1px solid #6785c1;
+}
+
+.page_bottom .inner {
+	position: relative;
+}
+
+.page_bottom .inner:before,
+.page_bottom .inner:after {
+	content: '';
+	display: table;
+}
+
+.page_bottom_contents {
+	display: table;
+	table-layout: auto;
+	width: 100%;
+}
+
+.page_bottom_col {
+	display: table-cell;
+}
+
+.page_bottom_col:first-child,
+.page_bottom_col:last-child {
+	vertical-align: bottom;
+	width: 45%;
+}
+
+.page_bottom_col:nth-child(2) {
+	vertical-align: middle;
+}
+
+.page_bottom_text {
+	white-space: nowrap;
+	margin: 30px 15px 45px;
+}
+
+.pagetop {
+	position: absolute;
+	right: 20px;
+	bottom: -10px;
+	display: block;
+	width: 70px;
+	height: 70px;
+	box-sizing: border-box;
+	background: #fff;
+	border: 1px solid #6785c1;
+	font-size: 11px;
+	color: #6785c1;
+	text-decoration: none;
+	font-feature-settings: "palt";
+	letter-spacing: .02em;
+	line-height: 1;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	 display: flex;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+		-ms-flex-flow: column;
+			flex-flow: column;
+	transition: all 0.2s ease-in-out;
+}
+
+.pagetop_img {
+	-webkit-box-flex: 0;
+		-ms-flex: none;
+			flex: none;
+	display: block;
+	margin: 0px auto 5px;
+	width: 24px;
+	height: 18px;
+	overflow: hidden;
+}
+
+.pagetop:hover {
+	background: #6785c1;
+	color: #fff;
+}
+
+.pagetop:hover .pagetop_img svg .cls-1, 
+.pagetop:hover .pagetop_img svg .cls-2 {
+	fill: #fff;
+}
+
+.footer {
+	padding: 17px 0px 0px;
+}
+
+.footer_corporate_logo{
+	width: 213px;
+	margin: 0px 0px 8px; 
+}
+
+.copyright{
+	font-size: 11px;
+}
+
+/* IE11 */
+@media all and (-ms-high-contrast:none) {
+	*::-ms-backdrop, .page_bottom_contents {
+		table-layout: fixed;
+	}
+	*::-ms-backdrop, .page_bottom_col:first-child, .page_bottom_col:last-child {
+		width: 20%;
+	}
+}
+
+@media (max-width: 1199px) {
+}
+ 
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+
+	/*
+	.page_bottom {
+		padding-top: 5px;
+	}
+	*/
+
+	.page_bottom_contents {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+			-ms-flex-pack: center;
+				justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+			-ms-flex-direction: column-reverse;
+				flex-direction: column-reverse;
+	}
+	
+	.page_bottom_col {
+		display: block;
+		text-align: center;
+		-webkit-box-flex: 0;
+		-ms-flex: none;
+			flex: none;
+	}
+
+	.page_bottom_col:first-child,
+	.page_bottom_col:last-child {
+		width: auto;
+	}
+
+	.page_bottom_col:first-child img {
+		width: 200px;
+	}
+
+	.page_bottom_col:nth-child(2) {
+		width: auto;
+	}
+
+	.page_bottom_text {
+		white-space: normal;
+		margin: 0px;
+		padding: 3% 0%;
+	}
+
+	.pagetop {
+		display: none;
+	}
+
+	.footer {
+		padding: 13px 0px 5px;
+	}
+
+	.footer_corporate_logo{
+		width: 132px;
+		margin: 0px; 
+	}
+
+	.copyright{
+		font-size: 8px;
+	}
+
+}
+
+@media (max-width: 575px) {
+}
+
+/* #〓〓〓〓〓 メイン画像 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+.main-visual {
+	background: white url(/img/magicconnect/mainvisual_bg.gif) center center no-repeat;
+	background-size: cover;
+}
+
+.main-visual__inner {
+	max-width: 1000px;
+	margin: 0px auto;
+}
+
+.main-visual__img__base {
+	position: absolute;
+	mix-blend-mode: multiply;
+}
+
+@media (max-width: 767px) {
+
+	.main-visual {
+		background-image: none;
+	}
+
+	.main-visual__contents img {
+		width: 100%;
+	}
+
+	.main-visual__img__base {
+		display: none;
+	}
+	
+	.main-visual__img {
+		mix-blend-mode: normal;
+	}
+}
+
+
+/* #〓〓〓〓〓 about magicConnectとは 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+.about__nav {
+	margin-bottom: 60px;
+	width: 100%;
+}
+
+.about__nav-list {
+	overflow: hidden;
+	padding: 5px 0px 5px 5px;
+	border-radius: 15px;
+	background-color: #d12433;	
+}
+
+.about__nav-link {
+	float: left;
+	font-feature-settings: "palt";
+}
+
+.about__nav-link a {
+	display: block;
+	padding: 25px 19px;
+	/*height: 40px;*/
+	font-size: 26px;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+.about__nav-link a:hover {
+	opacity: 0.5;
+}
+
+@media (min-width: 1040px) {
+
+	.about__nav-link:nth-child(-n+5) {
+		border-right: 2px solid white;
+	}
+	
+}
+
+@media (max-width: 1039px) and (min-width: 576px) {
+	
+	.about__nav {
+		margin-bottom: 30px;
+	}
+	
+	.about__nav-link {
+		width: 33%;
+	}
+	
+	.about__nav-link a {
+		padding: 0px;
+		width: 100%;
+		height: 15px;
+		font-size: 20px;
+		line-height: 15px;
+		border-radius: 10px;
+	}
+
+	.about__nav-link:nth-child(3n+1),
+	.about__nav-link:nth-child(3n-1) {
+		border-right: 1px solid white;
+	}
+
+	.about__nav-link:nth-child(-n+3) {
+		padding: 20px 0px 25px;
+		border-bottom: 1px solid white;	
+	}
+
+	.about__nav-link:nth-last-child(-n+3) {
+		padding: 25px 0px 20px;
+	}
+
+}
+
+@media (max-width: 575px) {
+	
+	.about__nav {
+		margin-bottom: 30px;
+	}
+	
+	.about__nav-link {
+		width: 32.5%;
+	}
+	
+	.about__nav-link a {
+		padding: 0px;
+		width: 100%;
+		height: 15px;
+		font-size: 14px;
+		line-height: 15px;
+		border-radius: 10px;
+	}
+
+	.about__nav-link:nth-child(3n+1),
+	.about__nav-link:nth-child(3n-1) {
+		border-right: 1px solid white;
+	}
+
+	.about__nav-link:nth-child(-n+3) {
+		padding: 20px 0px 25px;
+		border-bottom: 1px solid white;	
+	}
+
+	.about__nav-link:nth-last-child(-n+3) {
+		padding: 25px 0px 20px;
+	}
+
+}
+
+@media (max-width: 361px) {
+		
+	.about__nav-link:nth-child(6) {
+		padding: 10px 0px 20px;
+	}
+	
+}
+
+/* #〓〓〓〓〓 summary 製品概要 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+
+.youtube_box {
+	margin: 0px auto 50px;
+	width: 500px;
+}
+
+.youtube {
+	position: relative;
+	padding-bottom: 56.25%; /*アスペクト比 16:9の場合の縦幅*/
+	height: 0;
+	overflow: hidden;
+}
+ 
+.youtube iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.summary__detail-table {
+	width: 100%;
+	line-height: 1.4;
+	font-feature-settings: "palt";/* 要検証 */
+}
+
+.summary__detail-table tr:nth-child(odd) {
+	background-color: white;
+}
+
+.summary__detail-table tr:nth-child(even) {
+	background-color: #fff4ba;
+}
+
+.summary__detail-table td {
+	padding: 20px 120px;
+	border-bottom: 1px solid #e1dede;
+}
+
+@media (max-width: 650px) {
+
+	.youtube_box {
+		width: 85%;
+	}
+		
+	.summary__detail-table td {
+		padding: 10px 30px;
+	}
+
+}
+
+/* #〓〓〓〓〓 scene 主な用途 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+.scene__fig-list {
+	width: 100%;
+	overflow: hidden;
+}
+
+.scene__fig-item {
+	padding: 3% 1.5%;
+	float: left;
+	width: 47%;
+}
+
+.scene__fig-list .item1 {
+	background-color: #fff4ba;
+}
+
+.scene__fig-list .item2 {
+	background-color: #e1dede;
+}
+
+.scene__fig-images {
+	width: 65%;
+}
+
+.scene__fig-title {
+	margin: 0.5em 0em 0em;
+	font-size: 170%;
+	font-weight: bold;
+	line-height: 1.3;
+}
+
+.scene__fig-sub-title {
+	margin: 0.5em 0em 0em;
+	font-weight: bold;
+	line-height: 1.3;
+}
+
+.scene__fig-about-list {
+	margin: 0.7em 4em 0em;
+	text-align: left;
+	font-size: 85%;
+	line-height: 1.3;
+	list-style: disc;
+	line-height: 2em;
+}
+
+@media (max-width: 799px) and (min-width: 576px) {
+	
+	.scene__fig-item {
+		height: 320px;
+	}
+
+	.scene__fig-about-list {
+		line-height: 1.6em;
+	}
+
+}
+
+@media (max-width: 575px) {
+
+	.scene__fig-item {
+		height: 250px;
+	}
+
+	.scene__fig-about-list {
+		margin: 0.5em 2em 0em;
+		line-height: 1.6em;
+	}
+
+}
+
+/* #〓〓〓〓〓 feature 特徴 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+
+#feature .inner {
+	max-width: 951px;
+}
+
+.format {
+	margin: 0px auto 60px auto;
+	width: 420px;
+	height: 100px;
+	font-size: 170%;
+	line-height: 100px;
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+	border-radius: 10px;
+	background-color: #d12433;
+}
+
+.feature__about-list {
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+.feature__about-item {
+	float: left;
+	width: 300px;
+}
+
+.feature__about-item:nth-child(-n+2) {
+	margin: 0px 25px 0px 0px;
+}
+
+.feature__about-item p {
+	margin: 0.5em 0px;
+}
+
+.feature__point-box {
+	width: 300px;
+	height: 300px;
+	vertical-align: middle;
+	display: table-cell; 
+	background: url(/img/magicconnect/feature__point-box_bg.svg) center center no-repeat ;
+}
+
+.feature__point1 {
+	font-weight: bold;
+	font-size: 115%;
+	line-height: 1.3em;
+}
+
+.feature__point2 {
+	line-height: 1.3em;	
+}
+
+.catchcopy {
+	padding: 15px 0px;
+	font-weight: bold;
+	line-height: 1.5em;	
+	border: 6px solid #d12433;
+	border-radius: 15px;
+	background-color: white;
+}
+
+.catchcopy-icon {
+	width: 180px;
+}
+
+@media (max-width: 991px) and (min-width: 576px) {
+
+	.format {
+		width: 60%;
+		height: 70px;
+		line-height: 70px;
+	}
+
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+
+	#feature .inner {
+		width: 700px;
+	}
+	
+	.feature__about-item {
+		width: 220px;
+	}
+
+	.feature__about-item:nth-child(-n+2) {
+		margin: 0px 20px 0px 0px;
+	}
+
+	.feature__point-box {
+		width: 220px;
+		height: 220px;
+	}
+	
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+	
+	.feature__about-item {
+		float: none;
+		margin: 0px auto 20px;
+		width: 520px;
+		overflow: hidden;
+	}
+
+	.feature__about-item:nth-child(-n+2) {
+		margin: 0px auto 20px;
+	}
+		
+	.feature__point-box {
+		float: left;
+		width: 230px;
+		height: 230px;
+	}
+
+	.feature__point-box-inner {
+		width: 230px;
+		height: 230px;
+		vertical-align: middle;
+		display: table-cell;
+	}
+
+	.catchcopy {
+		float: right;
+		width: 220px;
+		line-height: 1.4em;	
+	}
+	
+	.catchcopy-icon {
+		width: 130px;
+	}
+	
+}
+
+@media (max-width: 575px) {
+	
+	.format {
+		width: 80%;
+		height: 60px;
+		line-height: 60px;
+	}
+
+	.feature__about-item {
+		float: none;
+		margin: 0px auto 20px;
+		width: 320px;
+		overflow: hidden;
+	}
+
+	.feature__about-item:nth-child(-n+2) {
+		margin: 0px auto 20px;
+	}
+		
+	.feature__point-box {
+		float: left;
+		width: 155px;
+		height: 155px;
+	}
+
+	.feature__point-box-inner {
+		width: 155px;
+		height: 155px;
+		vertical-align: middle;
+		display: table-cell;
+	}
+
+	.catchcopy {
+		float: right;
+		padding: 0px 3px;
+		width: 134px;
+		line-height: 1.4em;	
+		border: 3px solid #d12433;
+	}
+	
+	.catchcopy-icon {
+		width: 90px;
+	}
+
+}
+
+
+/* #〓〓〓〓〓 security セキュリティー 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+.security__box {
+	padding: 36px 30px 30px;
+	background-color: #e1dede;
+	overflow: hidden;
+}
+
+.authentication {
+	margin-bottom: 50px;
+}
+
+.security-about__mode {
+	float: left;
+	margin: -36px 30px 0px -30px;
+	width: 124px;
+	height: 124px;
+	line-height: 124px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	background-color: #d12433;
+}
+
+.security-about__title {
+	float: left;
+	margin-bottom: 40px;
+	text-align: left;
+	color: #d12433;
+}
+
+.security-about_type {
+	clear: both;
+	margin: 0px auto;
+	padding: 5px 5px;
+	width: 60%;
+	font-weight: bold;
+	color: white;
+	border-radius: 20px;
+	background-color: black;
+}
+
+.security__box p {
+	clear: both;
+}
+
+@media (max-width: 991px) {
+
+	.authentication {
+		margin-bottom: 30px;
+	}
+	
+	.security-about__mode {
+		margin: -26px 20px 0px -20px;
+		width: 90px;
+		height: 90px;
+		line-height: 90px;
+	}
+
+	.security__box {
+		padding: 26px 20px 20px;
+	}
+	
+	.security-about__title {
+		width: 70%;
+	}
+
+}
+
+/* #〓〓〓〓〓 spec 製品仕様 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+.spec__detail-table {
+	width: 100%;
+	line-height: 1.4;
+	font-feature-settings: "palt";/* 要検証 */
+}
+
+.spec__detail-table tr:nth-child(1) {
+	background-color: white;
+}
+
+.spec__detail-table tr:nth-child(2) {
+	background-color: #fff4ba;
+}
+
+.spec__detail-table th {
+	padding: 20px 0px 20px 30px;
+	vertical-align: middle;
+	font-weight: bold;
+	border-bottom: 1px solid #e1dede;
+}
+
+.spec__detail-table td {
+	padding: 20px 30px 20px 0px;
+	border-bottom: 1px solid #e1dede;
+}
+
+@media (max-width: 767px) {
+
+	.spec__detail-table th {
+		padding: 10px 0px 10px 20px;
+	}
+	
+	.spec__detail-table td {
+		padding: 10px 20px 10px 0px;
+	}
+	
+}
+
+/* #〓〓〓〓〓 service 導入支援サービス 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+.service__step {
+	margin: 0px auto;
+	width: 610px;
+	background: url(/img/magicconnect/step_bd.gif) 75px top repeat-y;
+}
+
+.service__step-item {
+	display: block;
+}
+
+.service__step-item:nth-child(-n+5) {
+	margin-bottom: 20px;
+}
+
+.step {
+	padding: 15px 20px; 
+	width: 110px;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background-color: #918888;
+}
+
+.step__about {
+	padding: 15px 20px; 
+	width: 400px;
+	font-weight: bold;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.step__about1 {
+	background-color: #fff4ba;	
+}
+
+.step__about2 {
+	background-color: #e1dede;	
+}
+
+.service__step-item:first-child p {
+	margin-top: 0px;
+}
+
+.service__step-item:last-child p {
+	margin-bottom: 0px;
+}
+
+@media (max-width: 650px) {
+
+	.service__step {
+		width: 90%;
+		background: url(/img/magicconnect/step_bd.gif) 8% top repeat-y;
+	}
+
+	.step {
+		padding: 10px 2%; 
+		width: 12%;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+
+	.step__about {
+		padding: 10px 2%; 
+		width: 80%;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+
+}
+
+/* #〓〓〓〓〓 contact コンタクト 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+.contact__body {
+	max-width: 650px;
+	margin: 0px auto;
+}
+
+.contact__link {
+	position: relative;
+	display: block;
+	margin: 0px auto 15px;
+	padding: 23px 0px;
+	font-size: 170%;
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 10px;
+	background: #d12433;
+}
+
+.contact__link:hover {
+	opacity: 0.5;
+}
+
+.contact__link:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	width: 20px;
+	height: 20px;
+	background: url(/img/magicconnect/ico_arrow.svg) center no-repeat;
+	background-size: contain;
+	transform: translate(0, -50%);
+}
+
+.contact__link-text {
+	display: inline-block;
+	position: relative;
+}
+
+@media (max-width: 767px) {
+
+	.contact__link {
+		padding: 12px 0px;
+	}
+
+	.contact__link:after {
+		right: 9px;
+		width: 13px;
+		height: 13px;
+	}
+
+	.contact__link-text {
+		padding-left: 34px;
+		padding-right: 34px;
+	}
+
+	.contact__link-text:before {
+		width: 22px;
+		height: 22px;
+	}
+
+}
+
+@media (max-width: 575px) {
+
+	.contact__link-text {
+		padding-left: 30px;
+		padding-right: 15px;
+	}
+
+}
+/*---------------------------------------
+ magicconnect end
+-------------------------------------- */
+/*---------------------------------------
+ AmiVoice start
+-------------------------------------- */
+
+
+/*
+
+#hogehoge
+
+```
+```
+
+*/
+
+
+
+@media (max-width: 1199px) {
+}
+ 
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 575px) {
+}
+
+/* #〓〓〓〓〓 ベースレイアウト 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+/*body {
+	font-family: "Hiragino Kaku Gothic ProN", "游ゴシック Medium", "Yu Gothic Medium", "YuGothic", sans-serif;
+	font-size: 20px;
+	line-height: 1.866;
+	color: #000000;
+	text-align: center;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-smoothing: antialiased;
+	transform: scale(1.0);
+}
+
+p {
+	margin: 1.2em 0em;
+}
+
+img {
+	vertical-align: top;
+	max-width: 100%;
+}
+
+.inner {
+	max-width: 1000px;
+	padding: 0px 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+*/
+@media (max-width: 1199px) {
+}
+ 
+@media (max-width: 991px) {
+/*	body {
+		font-size: 14px;
+		line-height: 1.98;
+	}
+*/
+}
+
+@media (max-width: 767px) {
+/*
+	p {
+		margin: .8em 0em;
+	}
+
+	.inner {
+		padding: 0px 10px;
+	}
+*/
+}
+
+@media (max-width: 576px) and (min-width: 768px) {
+/*	body {
+		font-size: 12px;
+		line-height: 1.98;
+	}
+*/	
+}
+
+@media (max-width: 575px) {
+/*
+body {
+		font-size: 12px;
+		line-height: 1.6;
+	}
+*/
+	
+}
+
+
+@media (min-width: 993px) {
+
+	.amivoice .only-tb {
+		display: none;
+	}
+
+	.amivoice .only-sp {
+		display: none;
+	}
+
+	.amivoice .ps-none {
+		display: none;
+	}
+
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+
+	.amivoice .only-pc {
+		display: none;
+	}
+
+	.amivoice .only-sp {
+		display: none;
+	}
+
+	.amivoice .tb-none {
+		display: none;
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	.amivoice .only-pc {
+		display: none;
+	}
+
+	.amivoice .only-tb {
+		display: none;
+	}
+
+	.amivoice .sp-none {
+		display: none;
+	}
+
+}
+
+
+/*
+
+#通常コンテンツ
+
+*/
+
+.amivoice .contents:before,
+.amivoice .contents:after {
+	content: '';
+	display: table;
+}
+
+.amivoice .contents .inner {
+	margin: 90px auto 90px;
+}
+
+.amivoice .contents__title-block {
+	margin-bottom: 25px;
+}
+
+@media (max-width: 767px) {
+
+	.amivoice .contents .inner {
+		margin: 40px auto 40px;
+	}
+
+	.amivoice .contents__title-block {
+		line-height: 1.3;
+		margin-bottom: 15px;
+	}
+
+}
+
+/*
+
+#グレー背景のコンテンツ
+
+*/
+
+.amivoice .contents-bg {
+	background: #c8d2fa;
+}
+
+.amivoice .contents-bg:before,
+.amivoice .contents-bg:after {
+	content: '';
+	display: table;
+}
+
+.amivoice .contents-bg .inner {
+	margin: 45px auto 45px;
+}
+
+@media (max-width: 767px) {
+
+	.amivoice .contents-bg .inner {
+		margin: 25px auto 25px;
+	}
+
+}
+
+/* #〓〓〓〓〓 パーツ 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+.amivoice .contents__title {
+	font-size: 280%;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	line-height: 1.5em;
+	font-feature-settings: "palt";	
+}
+
+.amivoice .contents__title rt {
+	padding: 0px 140px;
+	font-size: 40%;
+}
+
+.amivoice .title__number {
+	padding-right: .4em;
+}
+
+.amivoice .figure {
+	margin: 56px auto 0px;
+}
+
+.amivoice .text-cell {
+	display: inline-block;
+}
+
+.amivoice .text-cell-left {
+	display: inline-block;
+	text-align: left;
+}
+
+.amivoice .text-cell-mini {
+	display: inline-block;
+	font-size: 50%;
+}
+
+.amivoice .fontspace05 {
+	letter-spacing: 0.03em;
+}
+ 
+@media (max-width: 991px) {
+
+	.amivoice .contents__title rt {
+		padding: 0px 105px;
+	}
+
+}
+
+@media (max-width: 575px) {
+	
+	.amivoice .contents__title rt {
+		padding: 0px 80px;
+	}
+}
+
+/*
+
+#emphasis-text and #description-text
+
+*/
+
+.amivoice .emphasis-text {
+	font-size: 180%;/* これより大きくすると、2行になってカッコ悪い */
+	line-height: 1.5;
+	font-feature-settings: "palt";/* 要検証 */
+	letter-spacing: .02em;
+}
+
+.amivoice .emphasis-text strong {
+	font-weight: bold;
+	color: #d12433;
+}
+
+.amivoice .description-text {
+	margin-bottom: 20px;
+	font-size: 140%;
+	line-height: 1.5;
+	font-feature-settings: "palt";/* 要検証 */
+	letter-spacing: .02em;
+}
+
+.amivoice .description-text-left{
+	margin-bottom: 20px;
+	font-size: 140%;
+	line-height: 1.5;
+	font-feature-settings: "palt";/* 要検証 */
+	letter-spacing: .02em;
+	text-align: left;
+}
+
+.amivoice .description-text strong {
+	font-weight: bold;
+	color: #000000;
+}
+
+@media (max-width: 767px) {
+
+	.amivoice .figure {
+		margin: 25px auto 0px;
+	}
+
+	.amivoice .description-text {
+		margin-bottom: 10px;
+	}
+}
+
+/*
+
+.arrow .triangle
+
+*/
+
+.amivoice .arrow-down {
+	margin: 0px auto 0px;
+	width: 15px;
+	height: 15px;
+	border: 3px solid;
+	border-color: transparent transparent #FFFFFF #FFFFFF;
+	transform: rotate(-45deg); 
+}
+
+.amivoice .triangle-down {
+	margin: 30px auto;
+	width: 0px;
+	height: 0px;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 30px solid black;
+}
+
+@media (max-width: 1039px) {
+
+	.amivoice .arrow-down {
+		width: 12px;
+		height: 12px;
+		border: 2px solid;
+		border-color: transparent transparent #FFFFFF #FFFFFF;
+		transform: rotate(-45deg); 
+	}
+
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+	
+	.amivoice .triangle-down {
+		position: absolute;
+		margin: 100px 0px 0px 250px;
+		border-left: 20px solid black;
+		border-top: 20px solid transparent;
+		border-bottom: 20px solid transparent;	
+	}
+
+}
+
+@media (max-width: 575px) {
+	
+	.amivoice .triangle-down {
+		position: absolute;
+		margin: 65px 0px 0px 159px;
+		border-left: 12px solid black;
+		border-top: 12px solid transparent;
+		border-bottom: 12px solid transparent;	
+	}
+	
+}
+
+/* #〓〓〓〓〓 ヘッダー 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+.amivoice .header_inner {
+	max-width: 1000px;
+	margin: 0px auto;
+	padding: 0px 10px;
+}
+
+.amivoice .header_contents {
+	padding: 10px 0px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+			justify-content: space-between;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+}
+
+.amivoice .header_contact_text {
+	margin: 0px;
+	padding: 0em .4em;
+	font-weight: bold;
+	font-size: 14px;
+	/* line-height: 1.6; */
+	/*
+	-webkit-font-feature-settings: "palt";
+			font-feature-settings: "palt";
+	letter-spacing: .03em;
+	*/
+	/* boldより太くしたい */
+	-moz-osx-font-smoothing: auto;
+	-webkit-font-smoothing: subpixel-antialiased;
+		font-smoothing: subpixel-antialiased;
+}
+
+.amivoice .header_contact_btn {
+	display: block;
+	vertical-align: top;
+	text-decoration: none;
+	font-weight: bold;
+	color: inherit;
+	font-size: 18px;
+	padding: 6px 30px;
+	background: #ff9320;
+	color: #fff;
+	border: 4px solid #ffc62e;
+	position: relative;
+	box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.08);
+	/* boldより太くしたい */
+	-moz-osx-font-smoothing: auto;
+	-webkit-font-smoothing: subpixel-antialiased;
+		font-smoothing: subpixel-antialiased;
+}
+
+.amivoice .header_contact_btn:after {
+	content: '';
+	display: block;
+	background: url(/img/amivoice/ico_arrow.svg) center no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	right: 6px;
+	width: 12px;
+	height: 12px;
+}
+
+.amivoice .header_contact_btn_text {
+	/*position: relative;
+	padding-left: 32px;*/
+	padding-left: 15px;
+}
+
+.amivoice .header_contact_btn:before {
+	content: '';
+	display: block;
+	background: url(/img/amivoice/ico_mail.svg) center no-repeat;
+	background-size: contain;
+	width: 24px;
+	height: 16px;
+	position: absolute;
+	left: 15px;
+	top: 50%;
+	transform: translate(0,-50%);
+}
+
+@media (max-width: 1199px) {
+}
+ 
+@media (max-width: 991px) {
+	.amivoice .header_corporate_logo img {
+		height: 50px;
+	}
+}
+
+@media (max-width: 767px) {
+	
+	.amivoice .header_corporate_logo img {
+		height: 25px;
+	}
+
+	.amivoice .header_contents {
+		padding: 5px 0px;
+	}
+
+	.amivoice .header_contact_text {
+		display: none;
+	}
+
+	.amivoice .header_contact_btn {
+		padding: 6px 10px 4px;
+		border-width: 2px;
+	}
+
+	.amivoice .header_contact_btn:before {
+		display: block;
+		position: static;
+		margin: 0px auto;
+		transform: translate(0,0);
+		width: 18px;
+		height: 12px;
+	}
+
+	.amivoice .header_contact_btn:after {
+		content: none;
+	}
+
+	.amivoice .header_contact_btn_text {
+		display: block;
+		margin: .8em 0em 0em;
+		padding: 0px;
+		font-size: 6px;
+		line-height: 1;
+	}
+
+}
+
+@media (max-width: 575px) {
+}
+
+/*
+.amivoice .contact__link-text {
+	display: inline-block;
+	position: relative;
+	padding: 0px 64px;
+}
+
+.amivoice .contact__link-text:before {
+	content: '';
+	display: block;
+	background: url(/img/amivoice/ico_mail.svg) center no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+	left: 0;
+	width: 38px;
+	height: 38px;
+}
+*/
+
+/* #〓〓〓〓〓 フッター 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+.amivoice .page_bottom {
+	border-bottom: 1px solid #6785c1;
+}
+
+.amivoice .page_bottom .inner {
+	position: relative;
+}
+
+.amivoice .page_bottom .inner:before,
+.amivoice .page_bottom .inner:after {
+	content: '';
+	display: table;
+}
+
+.amivoice .page_bottom_contents {
+	display: table;
+	table-layout: auto;
+	width: 100%;
+}
+
+.amivoice .page_bottom_col {
+	display: table-cell;
+}
+
+.amivoice .page_bottom_col:first-child,
+.amivoice .page_bottom_col:last-child {
+	vertical-align: bottom;
+	width: 45%;
+}
+
+.amivoice .page_bottom_col:nth-child(2) {
+	vertical-align: middle;
+}
+
+.amivoice .page_bottom_text {
+	white-space: nowrap;
+	margin: 30px 15px 45px;
+}
+
+.amivoice .pagetop {
+	position: absolute;
+	right: 20px;
+	bottom: -10px;
+	display: block;
+	width: 70px;
+	height: 70px;
+	box-sizing: border-box;
+	background: #fff;
+	border: 1px solid #6785c1;
+	font-size: 11px;
+	color: #6785c1;
+	text-decoration: none;
+	font-feature-settings: "palt";
+	letter-spacing: .02em;
+	line-height: 1;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	 display: flex;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+		-ms-flex-flow: column;
+			flex-flow: column;
+	transition: all 0.2s ease-in-out;
+}
+
+.amivoice .pagetop_img {
+	-webkit-box-flex: 0;
+		-ms-flex: none;
+			flex: none;
+	display: block;
+	margin: 0px auto 5px;
+	width: 24px;
+	height: 18px;
+	overflow: hidden;
+}
+
+.amivoice .pagetop:hover {
+	background: #6785c1;
+	color: #fff;
+}
+
+.amivoice .pagetop:hover .pagetop_img svg .cls-1, 
+.amivoice .pagetop:hover .pagetop_img svg .cls-2 {
+	fill: #fff;
+}
+
+.amivoice .footer {
+	padding: 17px 0px 0px;
+}
+
+.amivoice .footer_corporate_logo{
+	width: 213px;
+	margin: 0px 0px 8px; 
+}
+
+.amivoice .copyright{
+	font-size: 11px;
+}
+
+/* IE11 */
+@media all and (-ms-high-contrast:none) {
+	*::-ms-backdrop, .page_bottom_contents {
+		table-layout: fixed;
+	}
+	*::-ms-backdrop, .page_bottom_col:first-child, .page_bottom_col:last-child {
+		width: 20%;
+	}
+}
+
+@media (max-width: 1199px) {
+}
+ 
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+
+	/*
+	.amivoice .page_bottom {
+		padding-top: 5px;
+	}
+	*/
+
+	.amivoice .page_bottom_contents {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+			-ms-flex-pack: center;
+				justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+			-ms-flex-direction: column-reverse;
+				flex-direction: column-reverse;
+	}
+	
+	.amivoice .page_bottom_col {
+		display: block;
+		text-align: center;
+		-webkit-box-flex: 0;
+		-ms-flex: none;
+			flex: none;
+	}
+
+	.amivoice .page_bottom_col:first-child,
+	.amivoice .page_bottom_col:last-child {
+		width: auto;
+	}
+
+	.amivoice .page_bottom_col:first-child img {
+		width: 200px;
+	}
+
+	.amivoice .page_bottom_col:nth-child(2) {
+		width: auto;
+	}
+
+	.amivoice .page_bottom_text {
+		white-space: normal;
+		margin: 0px;
+		padding: 3% 0%;
+	}
+
+	.amivoice .pagetop {
+		display: none;
+	}
+
+	.amivoice .footer {
+		padding: 13px 0px 5px;
+	}
+
+	.amivoice .footer_corporate_logo{
+		width: 132px;
+		margin: 0px; 
+	}
+
+	.amivoice .copyright{
+		font-size: 8px;
+	}
+
+}
+
+@media (max-width: 575px) {
+}
+
+/* #〓〓〓〓〓 メイン画像 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+.amivoice .main-visual {
+	background: white url(/img/amivoice/mainvisual_bg.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+.amivoice .main-visual__inner {
+	max-width: 1000px;
+	margin: 0px auto;
+}
+
+.amivoice .main-visual__contents img {
+		width: 100%;
+}
+
+
+/* #〓〓〓〓〓 about AmiVoice Keyboardとは 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+.amivoice .about__ami {
+	font-size: 48px;
+	font-family: Verdana;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.amivoice .about__ami sup{
+	font-size: 0.5em;
+	vertical-align: top;
+}
+
+.amivoice .about__nav {
+	margin-bottom: 60px;
+	width: 100%;
+}
+
+.amivoice .about__nav-list {
+	overflow: hidden;
+}
+
+.amivoice .about__nav-link {
+	float: left;
+}
+
+.amivoice .about__nav-link_a {
+	display: block;
+	padding: 30px 0px;
+	width: 160px;
+	/*height: 40px;*/
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 30px;
+	font-weight: bold;
+	border-radius: 15px;
+	color: #FFFFFF;
+	background-color: #788caa;	
+}
+
+.amivoice .about__nav-link-s_a {
+	display: block;
+	padding: 30px 0px;
+	width: 175px;
+	/*height: 40px;*/
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: bold;
+	border-radius: 15px;
+	color: #FFFFFF;
+	background-color: #788caa;	
+}
+
+.amivoice .about__nav-link a:hover {
+	opacity: 0.5;
+}
+
+.amivoice .about__nav-link:nth-child(1) ,
+.amivoice .about__nav-link:nth-child(2) ,
+.amivoice .about__nav-link:nth-child(3),
+.amivoice .about__nav-link:nth-child(4),
+.amivoice .about__nav-link:nth-child(5) {
+	margin-right: 2px;
+}
+
+@media (max-width: 1039px) and (min-width: 600px)  {
+	
+	.about__nav {
+		margin-bottom: 30px;
+	}
+	
+	.amivoice .about__nav-link {
+		width: 33%;
+	}
+	
+	.amivoice .about__nav-link a {
+		padding: 25px 0px;
+		width: 100%;
+		height: 20px;
+		line-height: 20px;
+		font-size: 20px;
+		border-radius: 10px;
+	}
+}
+
+@media  (max-width:  599px)  {
+	
+	.amivoice .about__nav {
+		margin-bottom: 30px;
+	}
+	
+	.amivoice .about__nav-link {
+		width: 32.5%;
+	}
+	
+	.amivoice .about__nav-link a {
+		padding: 22px 0px;
+		width: 100%;
+		height: 34px;
+		line-height: 17px;
+		font-size: 15px;
+		border-radius: 10px;
+	}
+}
+
+
+/* #〓〓〓〓〓 summary 製品概要 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+.amivoice .summary__detail-table {
+	width: 100%;
+	line-height: 1.4;
+	font-feature-settings: "palt";/* 要検証 */
+}
+
+.amivoice .summary__detail-table tr:nth-child(odd) {
+	background-color: white;
+}
+
+.amivoice .summary__detail-table tr:nth-child(even) {
+	background-color: #fff4ba;
+}
+
+.amivoice .summary__detail-table td {
+	padding: 20px 120px;
+	border-bottom: 1px solid #e1dede;
+}
+
+@media (max-width: 650px) {
+
+	.amivoice .summary__detail-table td {
+		padding: 10px 30px;
+	}
+}
+
+/* #〓〓〓〓〓 scene 適用業務例 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+#scene .inner {
+	max-width: 951px;
+}
+
+.amivoice .scene_ul {
+	width: 80%;
+	display: flex;
+	margin: 0px auto 20px auto;
+	justify-content: space-between;
+}
+
+.amivoice .secene_ul_li {
+	text-align: center;
+}
+
+.amivoice .secene_ul_li img {
+	object-fit: contain;
+}
+
+.amivoice .scene_ul_li_p {
+	width: 250px;
+	line-height: 45px;
+	color: #ffffff;
+	font-size: 1.2em;
+	background-color: #788caa;
+	margin: 10px 0;
+}
+
+
+@media (max-width: 991px) and (min-width: 576px) {
+
+	.amivoice .format {
+		width: 60%;
+		height: 70px;
+		line-height: 70px;
+	}
+
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+
+	#scene .inner {
+		width: 700px;
+	}
+
+	.amivoice .scene_ul_li {
+		width: 220px;
+	}
+
+	.amivoice .scene_ul_li_p {
+		width: 220px;
+	}
+
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+
+	.amivoice .scene_ul_li {
+		width: 180px;
+	}
+	
+	.amivoice .scene_ul_li_p {
+		width: 180px;
+	}
+}
+
+@media (max-width: 575px) {
+	
+	.amivoice .format {
+		width: 80%;
+		height: 60px;
+		line-height: 60px;
+	}
+
+	.amivoice .scene_ul_li {
+		width: 120px;
+	}
+
+	.amivoice .scene_ul_li_p {
+		width: 120px;
+	}
+}
+
+/* #〓〓〓〓〓 feature 特長〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+#feature .inner {
+	max-width: 951px;
+}
+
+.amivoice .format {
+	margin: 0px auto 60px auto;
+	width: 420px;
+	height: 100px;
+	font-size: 170%;
+	line-height: 100px;
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+	border-radius: 10px;
+	background-color: #d12433;
+}
+
+.amivoice .feature__about-list {
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+.amivoice .feature__about-item {
+	float: left;
+	width: 300px;
+}
+
+.amivoice .feature__about-item:nth-child(-n+2) {
+	margin: 0px 25px 0px 0px;
+}
+
+.amivoice .feature__about-item p {
+	margin: 0.5em 0px;
+}
+
+.amivoice .feature__point-box {
+	width: 300px;
+	height: 300px;
+	vertical-align: middle;
+	display: table-cell; 
+	background: url(/img/amivoice/feature__point-box_bg.svg) center center no-repeat ;
+}
+
+.amivoice .feature__point1 {
+	font-weight: bold;
+	font-size: 115%;
+	line-height: 1.3em;
+}
+
+.amivoice .feature_catchcopy {
+	padding: 15px 0px;
+	font-weight: bold;
+	line-height: 1.5em;	
+	border: 6px solid #788caa;
+	border-radius: 15px;
+	background-color: white;
+}
+
+.amivoice .feature_catchcopy-icon {
+	width: 180px;
+}
+
+@media (max-width: 991px) and (min-width: 576px) {
+
+	.amivoice .format {
+		width: 60%;
+		height: 70px;
+		line-height: 70px;
+	}
+
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+
+	#feature .inner {
+		width: 700px;
+	}
+	
+	.amivoice .feature__about-item {
+		width: 220px;
+	}
+
+	.amivoice .feature__about-item:nth-child(-n+2) {
+		margin: 0px 20px 0px 0px;
+	}
+
+	.amivoice .feature__point-box {
+		width: 220px;
+		height: 220px;
+	}
+	
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+	
+	.amivoice .feature__about-item {
+		float: none;
+		margin: 0px auto 20px;
+		width: 520px;
+		overflow: hidden;
+	}
+
+	.amivoice .feature__about-item:nth-child(-n+2) {
+		margin: 0px auto 20px;
+	}
+		
+	.amivoice .feature__point-box {
+		float: left;
+		width: 230px;
+		height: 230px;
+	}
+
+	.amivoice .feature__point-box-inner {
+		width: 230px;
+		height: 230px;
+		vertical-align: middle;
+		display: table-cell;
+	}
+
+	.amivoice .feature_catchcopy {
+		float: right;
+		width: 220px;
+		line-height: 1.4em;	
+	}
+	
+	.amivoice .feature_catchcopy-icon {
+		width: 130px;
+	}
+	
+}
+
+@media (max-width: 575px) {
+	
+	.amivoice .format {
+		width: 80%;
+		height: 60px;
+		line-height: 60px;
+	}
+
+	.amivoice .feature__about-item {
+		float: none;
+		margin: 0px auto 20px;
+		width: 320px;
+		overflow: hidden;
+	}
+
+	.amivoice .feature__about-item:nth-child(-n+2) {
+		margin: 0px auto 20px;
+	}
+		
+	.amivoice .feature__point-box {
+		float: left;
+		width: 155px;
+		height: 155px;
+	}
+
+	.amivoice .feature__point-box-inner {
+		width: 155px;
+		height: 155px;
+		vertical-align: middle;
+		display: table-cell;
+	}
+
+	.amivoice .feature_catchcopy {
+		float: right;
+		padding: 0px 3px;
+		width: 134px;
+		line-height: 1.4em;	
+		border: 3px solid #788caa;
+	}
+	
+	.amivoice .feature_catchcopy-icon {
+		width: 90px;
+	}
+
+}
+
+
+/* #〓〓〓〓〓 spec 製品仕様 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+.amivoice .spec__detail-table {
+	width: 100%;
+	line-height: 1.4;
+	font-feature-settings: "palt";/* 要検証 */
+}
+
+.amivoice .spec__detail-table tr:nth-child(1) {
+	background-color: #e1dede;
+}
+
+.amivoice .spec__detail-table tr:nth-child(2) {
+	background-color: #fff4ba;
+}
+
+.amivoice .spec__detail-table tr:nth-child(3) {
+	background-color: #e1dede;
+}
+
+.amivoice .spec__detail-table th {
+	padding: 20px 0px 20px 30px;
+	vertical-align: middle;
+	font-weight: bold;
+	border-bottom: 1px solid #e1dede;
+}
+
+.amivoice .spec__detail-table td {
+	padding: 20px 30px 20px 0px;
+	border-bottom: 1px solid #e1dede;
+}
+
+@media (max-width: 767px) {
+
+	.amivoice .spec__detail-table th {
+		padding: 10px 0px 10px 20px;
+	}
+	
+	.amivoice .spec__detail-table td {
+		padding: 10px 20px 10px 0px;
+	}
+	
+}
+
+
+/* #〓〓〓〓〓 construct 構成図 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+
+
+/* #〓〓〓〓〓 merit 当社からの導入メリット 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+#merit .inner {
+	max-width: 951px;
+}
+
+.amivoice .format {
+	margin: 0px auto 60px auto;
+	width: 420px;
+	height: 100px;
+	font-size: 170%;
+	line-height: 100px;
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+	border-radius: 10px;
+	background-color: #d12433;
+}
+
+.amivoice .merit__about-list {
+	text-align: center;
+	/*margin: 0px auto;*/
+	overflow: hidden;
+}
+
+.amivoice .merit__about-item {
+	float: left;
+	width: 300px;
+}
+
+.amivoice .merit__about-item:nth-child(-n+2) {
+	margin: 0px 15px 0px 0px;
+}
+
+.amivoice .merit__about-item p {
+	margin: 0.5em 0px;
+}
+
+.amivoice .merit_catchcopy {
+	padding: 15px 0px;
+	font-weight: bold;
+	line-height: 1.5em;	
+	border: 6px solid #788caa;
+	border-radius: 15px;
+	background-color: white;
+}
+
+.amivoice .merit_catchcopy-icon {
+	width: 180px;
+}
+
+@media (max-width: 991px) and (min-width: 576px) {
+
+	.amivoice .format {
+		width: 60%;
+		height: 70px;
+		line-height: 70px;
+	}
+
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+
+	#merit .inner {
+		width: 700px;
+	}
+	
+	.amivoice .merit__about-item {
+		width: 220px;
+	}
+
+	.amivoice .merit__about-item:nth-child(-n+2) {
+		margin: 0px 20px 0px 0px;
+	}
+	
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+
+	.amivoice .merit__about-item {
+		float: none;
+		margin: 0px auto 20px;
+		width: 240px;
+		overflow: hidden;
+	}
+
+	.amivoice .merit__about-item:nth-child(-n+2) {
+		margin: 0px auto 20px;
+	}
+
+	.amivoice .merit_catchcopy {
+		float: right;
+		width: 220px;
+		line-height: 1.4em;	
+	}
+	
+	.amivoice .merit_catchcopy-icon {
+		width: 130px;
+	}
+	
+}
+
+@media (max-width: 575px) {
+	
+	.amivoice .format {
+		width: 80%;
+		height: 60px;
+		line-height: 60px;
+	}
+
+	.amivoice .merit__about-item {
+		float: none;
+		margin: 0px auto 20px;
+		width: 160px;
+		overflow: hidden;
+	}
+
+	.amivoice .merit__about-item:nth-child(-n+2) {
+		margin: 0px auto 20px;
+	}
+
+	.amivoice .merit_catchcopy {
+		float: right;
+		padding: 0px 3px;
+		width: 134px;
+		line-height: 1.4em;	
+		border: 3px solid #788caa;
+	}
+	
+	.amivoice .merit_catchcopy-icon {
+		width: 90px;
+	}
+
+}
+
+
+/* #〓〓〓〓〓 contact コンタクト 〓〓〓〓〓 */
+/* 〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓〓 */
+
+.amivoice .contact__body {
+	max-width: 650px;
+	margin: 0px auto;
+}
+
+.amivoice .contact__link {
+	position: relative;
+	display: block;
+	margin: 0px auto 15px;
+	padding: 23px 0px;
+	font-size: 170%;
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 10px;
+	background: #788caa;
+}
+
+.amivoice .contact__link:hover {
+	opacity: 0.5;
+}
+
+.amivoice .contact__link:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	width: 20px;
+	height: 20px;
+	background: url(/img/amivoice/ico_arrow.svg) center no-repeat;
+	background-size: contain;
+	transform: translate(0, -50%);
+}
+
+.amivoice .contact__link-text {
+	display: inline-block;
+	position: relative;
+}
+
+@media (max-width: 767px) {
+
+	.amivoice .contact__link {
+		padding: 12px 0px;
+	}
+
+	.amivoice .contact__link:after {
+		right: 9px;
+		width: 13px;
+		height: 13px;
+	}
+
+	.amivoice .contact__link-text {
+		padding-left: 34px;
+		padding-right: 34px;
+	}
+
+	.amivoice .contact__link-text:before {
+		width: 22px;
+		height: 22px;
+	}
+
+}
+
+@media (max-width: 575px) {
+
+	.amivoice .contact__link-text {
+		padding-left: 30px;
+		padding-right: 15px;
+	}
+
+}
+
+/*---------------------------------------
+ AmiVoice end
+-------------------------------------- */

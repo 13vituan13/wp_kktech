@@ -1,0 +1,448 @@
+@charset "utf-8";
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.clearfix:before {
+　　　　content: "";
+	display: block;
+	clear: both;
+}
+.clearfix {
+	display: block;
+}
+
+.content{
+  padding-top: 100px;
+}
+.link01 {
+   margin-top:-100px;
+  padding-top:100px;
+}
+
+.main-contentsarea01 {
+    text-align: left;
+	/*padding-top: 100px;*/
+}
+.main-contentsarea01 p {
+    text-indent: 1em;
+    line-height:1.6em;
+    margin-top: 2em;
+}
+
+.main-contentsarea01 h3 {
+  position: relative;
+  padding: 1rem .5rem 1rem .5rem;
+    font-size:1.5em;
+
+}
+
+.main-contentsarea01 h3:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  content: '';
+  border-radius: 1px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#009efd), to(#134a9c));
+  background-image: -webkit-linear-gradient(right, #009efd 0%, #134a9c 100%);
+  background-image: linear-gradient(to left, #009efd 0%, #134a9c 100%);
+}
+
+
+
+
+
+.main-contentsarea01 h4 {
+    margin-top: 4em;
+}
+
+.main-contentsarea01 h4 {
+    position: relative;
+    overflow: hidden;
+    padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  
+  .main-contentsarea01 h4:before {
+    position: absolute;
+    top: 10%;
+    left: 10px;
+    width: 5px;
+    height: 80%;
+    content: '';
+    background: #134a9c;
+  }
+  
+  .main-contentsarea01 h4 span {
+    font-size: 40px;
+    font-size: 4rem;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: block;
+    padding-top: 3px;
+    padding-left: 16px;
+    color: #fff;
+  }
+
+
+.main-contentsarea01 h5 {
+    margin-top: 4em;
+    position: relative;
+    overflow: hidden;
+    padding: 0.5rem 0.5rem 0.5rem 4.5rem;
+    border-bottom: 1px solid #e1e1e1;
+    font-weight: normal;
+  }
+  
+  .main-contentsarea01 h5:before {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    width: 10px;
+    height: 30%;
+    content: '';
+    background: #134a9c;
+  }
+  
+  .main-contentsarea01 h5 span {
+    font-size: 40px;
+    font-size: 4rem;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: block;
+    padding-top: 3px;
+    padding-left: 16px;
+    color: #fff;
+  }
+.main-contentsarea01 td.sitemap {
+    margin-top: 4em;
+    position: relative;
+    overflow: hidden;
+    font-weight: normal;
+  }
+  .main-contentsarea01 td.sitemap:before {
+    position: absolute;
+    top: 45%;
+    left: 3px;
+    width: 8px;
+    height: 20%;
+    content: '';
+    background: #134a9c;
+  }
+
+.btn {
+text-align:center;
+margin:30px 0 50px 0;
+}
+div.contact-box {
+    border: 1px solid #6785c1;
+    padding: 15px 30px;
+}
+
+
+.list-layout01 {
+  width : 100%;
+}
+.list-layout01 dl{
+  width : 90%;
+  margin:auto;
+}
+.list-layout01 dt{
+  padding:30px 5px 0px 5px;
+}
+.list-layout01 dd{
+  padding:5px 30px 0px 30px;
+}
+
+.max-wd2x-40 {
+max-width:40%;
+
+}
+.select-area01 {
+padding:1.5em 0 4em 0 ;
+}
+
+/*///////////////////////*/
+/* さいとまっぷ */
+/*///////////////////////*/
+.u-tbl01 {
+	width: 100%;
+	line-height: 2;
+}
+.u-tbl01 > thead {}
+.u-tbl01 > thead > tr {}
+.u-tbl01 > thead > tr > th {
+	padding: 7px 10px;
+	border: 1px solid #ddd;
+	white-space: nowrap;
+	background: #efefef;
+	font-weight: normal;
+	vertical-align: middle;
+}
+.u-tbl01 > tbody {}
+.u-tbl01 > tbody > tr {
+	border-bottom: 2px solid #AAAAAA;
+	border-top: 2px solid #AAAAAA;
+}
+.u-tbl01 > tbody > tr > th {
+	color: #1A7917;
+	white-space: nowrap;
+	padding-right: 1em;
+	font-size: 112.5%;
+	background-image: linear-gradient(to right, #fff, #fff), linear-gradient(to right, #fff, #fff), linear-gradient(to right, #aaa, #aaa);
+	background-size: 2px 24px, 2px 24px, 1px 1px;
+	background-repeat: no-repeat, no-repeat, repeat-y;
+	background-position: right bottom, right top, right top;
+	padding: 17px 0;
+	padding-right: 40px;
+	vertical-align: middle;
+}
+.u-tbl01 > tbody > tr > td {
+	font-size: 87.5%;
+	padding: 16px 0;
+	padding-left: 40px;
+}
+.u-tbl02 {
+	width: 100%;
+}
+.u-tbl02 > thead {}
+.u-tbl02 > thead > tr {}
+.u-tbl02 > thead > tr > th {
+	background-color: #F0F5F0;
+	color: #1A7917;
+	font-weight: bold;
+	padding: 7px 20px;
+	background-image: linear-gradient(to right, #fff, #fff);
+	background-size: 10px 1px;
+	background-repeat: repeat-y;
+	background-position: right top;
+	white-space: nowrap;
+}
+.u-tbl02 > thead > tr > th:last-child {
+	background-image: none;
+}
+.u-tbl02 > tbody {}
+.u-tbl02 > tbody > tr {}
+.u-tbl02 > tbody > tr > th {
+	padding: 7px 10px;
+	border: 1px solid #ddd;
+	white-space: nowrap;
+	background: #efefef;
+	font-weight: normal;
+	text-align: left;
+	width: 140px;
+	vertical-align: top;
+}
+.u-tbl02 > tbody > tr > td {
+	padding: 14px 20px;
+	/**background-image: linear-gradient(to right, #fff, #fff), linear-gradient(to right, #aaa, #aaa);**/
+	background-size: 10px 1px, 1px 1px;
+	background-repeat: repeat-y, repeat-x;
+	background-position: right top, right bottom;
+}
+.u-tbl02 > tbody > tr > td:last-child {
+	background-image: linear-gradient(to right, #aaa, #aaa);
+	background-size: 1px 1px;
+	background-repeat: repeat-x;
+	background-position: right bottom;
+}
+.u-tbl02 > tbody > tr > td.-right {
+	text-align: right;
+}
+
+
+
+
+.u-tblWrap {
+	overflow: auto;
+}
+.u-tblWrap_caution {
+	display: none;
+}
+/*///////////////////////*/
+/* さいとまっぷ end */
+/*///////////////////////*/
+
+/*///////////////////////*/
+/* メールフォーム start */
+/*///////////////////////*/
+
+.aform .aform-content dl dt {
+width: 30%;
+}
+#aform-1 input {
+width: 100%;
+padding:1rem 0;
+}
+#aform-1 .dl_parts-2 img {
+width:1em;
+height:1em;
+}
+#aform-1 .aform-required {
+  display: inline-block;
+  color:#fff;
+  font-size:85%;
+  background: rgb(255, 0, 0);
+  margin: 0px 15px 3px 15px;
+  padding:2px 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+#aform-1 .aform-header {
+  position: relative;
+  padding: 1rem .5rem 1rem .5rem;
+    font-size:1.5em;
+
+}
+#aform-1 .aform-header:after {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 6px;
+content: '';
+border-radius: 1px;
+background-image: -webkit-gradient(linear, right top, left top, from(#009efd), to(#134a9c));
+background-image: -webkit-linear-gradient(right, #009efd 0%, #134a9c 100%);
+background-image: linear-gradient(to left, #009efd 0%, #134a9c 100%);
+}
+
+#aform-1 .aform-checkbox-ul li{
+   text-align: center;
+}
+
+#aform-1 .aform-button-area {
+width:center;
+padding:40px;
+   text-align: center;
+}
+#aform-1 .aform-button-area input {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+color:#fff;
+background: #134a9c;
+}
+#aform-1 .aform-content {
+margin-top:3rem;
+}
+
+#aform-1 textarea{
+width:100%;
+margin-top:3rem;
+}
+/*///////////////////////*/
+/* メールフォーム end */
+/*///////////////////////*/
+
+/*///////////////////////*/
+/* 新会社カラー 適用 Start */
+/*///////////////////////*/
+.p-bg__grd_maintheme {
+    width: 100%;
+    background: #0046ff;
+    background: -webkit-gradient(linear, left bottom, left top, from(#093ec8), to(#0046ff));
+    background: -webkit-linear-gradient(bottom, #093ec8 0%, #0046ff 100%);
+    background: -o-linear-gradient(bottom, #093ec8 0%, #0046ff 100%);
+    background: linear-gradient(0deg, #093ec8 0%, #0046ff 100%);
+    color: #fff;
+}
+.p-topicstop__bgi {
+    display: block;
+    width: calc( 100vw);
+    height: calc( 100% - ( 300 / 16 * 1em ));
+    background: #0046ff;
+    border-radius: calc( 30 / 16 * 1em);
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+/*.p-servicetop__bgi {
+    display: block;
+    width: calc( 100vw);
+    height: calc( 100% - ( 300 / 16 * 1em ));
+    background: #0046ff;
+    border-radius: calc( 30 / 16 * 1em);
+    overflow: hidden;
+    position: absolute;
+    top: calc( 220 / 16 * 1em);
+    left: calc( 620 / 16 * 1em);
+    margin: auto;
+    z-index: 1;
+}*/
+/*///////////////////////*/
+/* 新会社カラー 適用 end */
+/*///////////////////////*/
+
+/*///////////////////////*/
+/* ソリューション Start */
+/*///////////////////////*/
+ul.addliflex{
+	list-style: none;
+	padding-left: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+ul.addliflex li{
+   width:45%;
+   border:1px dotted;
+   margin:1em 0 0 1em;
+   padding:1em;
+   background:#ccccff;
+}
+ul.addliflex2{
+	list-style: none;
+	padding-left: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+ul.addliflex2 li{
+   width:100%;
+   border:1px dotted;
+   margin:1em 0 0 1em;
+   padding:1em;
+   background:#eeeeff;
+}
+.tbltpl_001{
+   border:1px dotted;
+width:100%;
+}
+.tbltpl_001 td{
+   border:1px dotted;
+width:25%;
+padding:0 0 0 1em;
+text-align:left;
+}
+
+/*///////////////////////*/
+/* ソリューション end */
+/*///////////////////////*/
+
+
+
+
+
+@media screen and (max-width:767px) {
+/* ここにSP向けのCSS指定 */
+ul.addliflex li{
+   width:95%;
+   border:1px dotted;
+   margin:1em 0 0 1em;
+   padding:1em;
+}
+
+
+
+}
