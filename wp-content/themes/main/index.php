@@ -1,6 +1,6 @@
 <?php get_header() ?>
-    <!--▼ p-main ▼-->
-    <div class="p-main">
+<!--▼ p-main ▼-->
+<div class="p-main">
 
 <!--▽▽▽ section ▽▽▽-->
 <section>
@@ -118,27 +118,6 @@
                     </div>
                   </a>
                 </li>
-
-                <!--左端。5個目Start-->
-                <!--
-                <li>
-                  <a href="https://www.dell.com/ja-jp/dt/case-studies-customer-stories/miraitsystems.htm#collapse">
-                    <div class="p-topicstop__box_item">
-                      <div class="p-topicstop__box_item--img">
-                        <i><img src="/img/common/topics_pict_004.png" alt=""></i>
-                      </div>
-                      <div class="p-topicstop__box_item--txt">
-                        <div class="p-topicstop__box_item--txt-date">
-                          <p>2021-02-24</p>
-                        </div>
-                        <div class="p-topicstop__box_item--txt-tit">
-                          <p>当社のシンクライアント導入がデル社の導入事例で紹介されました</p>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              -->
                 <!--左端。1個目Start-->
                 <li>
                   <a href="/topics/trwork100.html">
@@ -705,40 +684,7 @@
           </div>
           <div class="p-companytop__cnt">
             <ul>
-              <!--<li>
-                <a href="#">
-                  <div class="p-companytop__cnt_item">
-                    <div class="p-companytop__cnt_item--img">
-                      <p>
-                        <i><img src="/img/index/companytop_cnt01_item01_img01_img01.png" alt="会社案内を見る"></i>
-                      </p>
-                    </div>
-                    <div class="p-companytop__cnt_item--txt">
-                      <p>
-                        <strong>会社案内を見る</strong>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </li>
               <li>
-                <a href="#">
-                  <div class="p-companytop__cnt_item">
-                    <div class="p-companytop__cnt_item--img">
-                      <p>
-                        <i><img src="/img/index/companytop_cnt01_item02_img01_img01.png" alt="valuebookを見る"></i>
-                      </p>
-                    </div>
-                    <div class="p-companytop__cnt_item--txt">
-                      <p>
-                        <strong>valuebookを見る</strong>
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </li>-->
-              <li>
-                <!--<a class="js_modaal js_modaal_video" href="https://www.youtube.com/embed/dEgVvh0B6is">-->
                 <a class="js_modaal js_modaal_video" href="https://www.youtube.com/embed/YsywWr9de34">
                   <div class="p-companytop__cnt_item">
                     <div class="p-companytop__cnt_item--img">
