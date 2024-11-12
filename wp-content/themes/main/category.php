@@ -1,58 +1,68 @@
-<?php get_header() ?>
-<!-- start main content -->
-<div class="main_content clearfix ">
-            <div class="tieude_link">
-                <a class="text-1" href="<?php bloginfo('url') ?>">Trang chủ</a>
-                <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
-                <a class="text-2"><?php single_cat_title(); ?></a>
-            </div>
-            <div class="box_container pd50">
-                <div class="tieude_giua"><?php single_cat_title(); ?></div>
-                <div class="page_load overflow">
-                     
-                            <?php if (have_posts()) : ?>
-                                <div class="flex wrap"> 
-                                    <?php while (have_posts()) : the_post(); ?>
-                                        <div class="item_dv item_hact">
-                                            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-                                                <p class="sp_img zoom_hinh"> 
-                                                    <?php echo get_the_post_thumbnail(get_the_id(),'full', array('class' => 'lazy') );?>
-                                                </p>
-                                                <div class="info_dichvu">
-                                                    <h3 class="sp_name  catchuoi1"><?php the_title(); ?></h3>
-                                                    <p style="color:#000;font-style:italic">Ngày đăng: <?php echo get_the_date('d - m - Y'); ?></p>
-                                                    <!-- <p><?php the_excerpt(); ?></p> -->
-                                                    <span class="xemct">Xem chi tiết</span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    <?php endwhile; ?>
+<?php
+/**
+ * Template for displaying category posts
+ * This template will be called by topics.php and events.php
+ */
+
+    function render_category_posts($post_type = '')
+    {
+        // Query posts
+        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+        $args = array(
+            'post_type' => $post_type, // Lọc theo custom post type 'Topics'
+            'posts_per_page' => 10,
+            'paged' => $paged
+        );
+        $query = new WP_Query($args);
+        ?>
+        <!-- Posts Section -->
+        <div class="p-stdfmt">
+            <div class="p-section">
+                <div class="p-section__inner">
+                    <section>
+                        <div class="p-topicsarchive">
+                            <div class="p-section">
+                                <div class="p-section__inner">
+                                    <div class="p-topicsarchive__box">
+                                        <ul>
+                                            <?php if ($query->have_posts()):
+                                                while ($query->have_posts()):
+                                                    $query->the_post(); ?>
+                                                    <li>
+                                                        <a href="<?php the_permalink(); ?>">
+                                                            <div class="p-topicsarchive__box_item">
+                                                                <div class="p-topicsarchive__box_item--img">
+                                                                    <i>
+                                                                        <?php if (has_post_thumbnail()): ?>
+                                                                            <?php the_post_thumbnail('full', array('decoding' => 'async', 'loading' => 'lazy')); ?>
+                                                                        <?php else: ?>
+                                                                            <img src="https://placehold.co/306x240" alt="" decoding="async"
+                                                                                loading="lazy">
+                                                                        <?php endif; ?>
+                                                                    </i>
+                                                                </div>
+                                                                <div class="p-topicsarchive__box_item--txt">
+                                                                    <div class="p-topicsarchive__box_item--txt-date">
+                                                                        <p><?php echo get_the_date('Y-m-d'); ?></p>
+                                                                    </div>
+                                                                    <div class="p-topicsarchive__box_item--txt-tit">
+                                                                        <p><?php the_title(); ?></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                <?php endwhile; endif;
+                                            wp_reset_postdata(); ?>
+                                        </ul>
+                                    </div>
                                 </div>
-                            <?php else:  ?>
-                                <div class="flex" style="justify-content: center"> 
-                                    <h3 style="color: red;text-alight: center;">Chưa có bài viết nào.</h3>
-                                </div > 
-                            <?php endif; ?>
-                        
-                        
-                            <?php if(paginate_links()!='') {?>
-                                <div class="paging-sm">
-                                    <?php
-                                    global $wp_query;
-                                    $big = 999999999; // Số lớn đại diện cho số trang cực lớn
-                                    echo paginate_links( array(
-                                        'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-                                        'format' => '?paged=%#%',
-                                        'prev_text'    => __('«'),
-                                        'next_text'    => __('»'),
-                                        'current' => max( 1, get_query_var('paged') ),
-                                        'total' => $wp_query->max_num_pages
-                                        ) );
-                                    ?>
-                                </div>
-                            <?php } ?>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
-<!-- end main content -->
-<?php get_footer() ?>
+        <?php
+    }
+?>

@@ -1,11 +1,8 @@
-<?php /* Template Name: News */ ?>
 <?php get_header(); ?>
-<!--▼▼ l-main ▼▼-->
-<div class="l-main">
-    <!--▼ p-main ▼-->
-    <div class="p-main">
 
-        <!--▽▽▽ section ▽▽▽-->
+<div class="l-main">
+    <div class="p-main">
+        <!-- Page Title Section -->
         <section>
             <div class="p-pagetitle">
                 <div class="p-bg p-bg__grd p-bg__grd_maintheme">
@@ -13,12 +10,7 @@
                         <div class="p-section__inner">
                             <div class="p-pagetitle__box">
                                 <h1>
-
-                                    <strong>NEWS</strong>
-                                    <em>NEWS</em>
-
-
-
+                                    <strong><?php the_title(); ?></strong>
                                 </h1>
                             </div>
                         </div>
@@ -26,49 +18,55 @@
                 </div>
             </div>
         </section>
-        <!--△△△ section △△△-->
 
-        <!--▽▽▽ section ▽▽▽-->
+        <!-- Breadcrumb Section -->
         <section>
             <div class="p-breadcrumblist">
                 <div class="p-bg p-bg__clr p-bg__clr_basetheme">
                     <div class="p-section">
                         <div class="p-section__inner">
-
                             <div class="p-breadcrumblist__box">
                                 <ul>
                                     <li><a href="<?php echo home_url(); ?>">ホーム</a></li>
-                                    <li><a href="<?php echo home_url('news'); ?>">ニュース</a></li>
-                                    <li><strong></strong></li>
+                                    <li><a href="<?php echo home_url('/topics'); ?>">Topics</a></li>
+                                    <li><strong><?php the_title(); ?></strong></li>
                                 </ul>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--△△△ section △△△-->
 
-        <!--▽▽▽ section ▽▽▽-->
+        <!-- Content Section -->
         <section>
-
             <div class="p-stdfmt">
                 <div class="p-section">
                     <div class="p-section__inner">
-                        <div style="text-align:left;">
-                            <div class="main-contentsarea01">
-                                <h3>お知らせ一覧</h3>
+                        <div class="p-stdfmt__tit">
+                            <div class="p-tit p-tit__type02">
+                                <h2><strong><?php the_title(); ?></strong></h2>
                             </div>
-                            <?php get_template_part('archive'); ?>
+                        </div>
+                        <div class="p-stdfmt__box">
+                            <div class="p-table">
+                                <div class="p-table__box is_column">
+                                    <div style="text-align:left;">
+                                        <p><?php the_content(); ?></p>
+                                        <p style="margin-top:2rem;text-align:right;">
+                                            <span class="day"><?php the_date(); ?> <?php the_time(); ?></span><br>
+                                            カテゴリ: 
+                                            <span class="category"><?php the_category(', '); ?></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--△△△ section △△△-->
     </div>
-    <!--▲ p-main ▲-->
 </div>
-<!--▲▲ l-main ▲▲-->
-<?php get_footer() ?>
+
+<?php get_footer(); ?>

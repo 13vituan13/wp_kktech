@@ -1,43 +1,84 @@
-<?php get_header() ?>
-<!-- start main content -->
-<div class="main_content clearfix ">
-            <div class="tieude_link">
-                <a class="text-1" href="">Trang chủ</a>
-                <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
-                <?php the_category('text-1'); ?>
-                <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
-                <a class="text-2"><?php the_title() ?></a>
-            </div>
-            <div class="box_container pd50">
-            <?php if (have_posts()) : ?>
-                <?php while (have_posts()) : the_post(); ?>
-                    <div class="tieude_giua"><?php the_title() ?></div>          
-                    <!-- <div class="meta">
-                        <span>Ngày đăng: <?php echo get_the_date('d - m -Y'); ?></span>
-                        <span>Tác giả: <?php echo the_author(); ?></span>
-                        <span>Chuyên mục: <?php echo the_category(); ?></span>
-                        <span>lượt xem: 123</span>
-                    </div>   -->
-                    <div class="content">
-                        <?php the_content(); ?>
-                        <div class="clearfix"></div>
-                        <!-- <p class="ngay"><i class="fa fa-calendar" aria-hidden="true"></i> 30/08/2022 04:12 PM <span><i
-                                class="fa fa-eye" aria-hidden="true"></i> 352</span></p> -->
-                        <div class="addthis_toolbox addthis_default_style ">
-                            <div class="zalo-share-button" data-href="" data-oaid="427688403758010973" data-layout="1"
-                                data-color="blue" data-customize="false"></div>
-                            <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-                            <a class="addthis_button_facebook_share" fb:share:layout="button_count"></a>
-                            <a class="addthis_button_tweet"></a>
-                            <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-                            <a class="addthis_counter addthis_pill_style"></a>
+<?php get_header(); ?>
+
+<div class="l-main">
+    <!--▼ p-main ▼-->
+    <div class="p-main">
+
+        <!--▽▽▽ section ▽▽▽-->
+        <section>
+            <div class="p-pagetitle">
+                <div class="p-bg p-bg__grd p-bg__grd_maintheme">
+                    <div class="p-section">
+                        <div class="p-section__inner">
+                            <div class="p-pagetitle__box">
+                                <h1>
+                                    <strong>NEWS</strong>
+                                    <em>NEWS</em>
+                                </h1>
+                            </div>
                         </div>
-                        <div class="fb-comments" data-href="https://ktdtienphat.vn//sua-dien-cong-nghiep-kcn-hai-son"
-                            data-numposts="5" data-width="100%"></div>
-                    </div>                 
-                <?php endwhile;?>
-            <?php endif; ?>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- end main content -->
-<?php get_footer() ?>
+        </section>
+        <!--△△△ section △△△-->
+
+        <!--▽▽▽ Breadcrumb section ▽▽▽-->
+        <section>
+            <div class="p-breadcrumblist">
+                <div class="p-bg p-bg__clr p-bg__clr_basetheme">
+                    <div class="p-section">
+                        <div class="p-section__inner">
+                            <div class="p-breadcrumblist__box">
+                                <ul>
+                                    <li><a href="<?php echo home_url(); ?>">ホーム</a></li>
+                                    <li><a href="<?php echo home_url('news'); ?>">ニュース</a></li>
+                                    <li><strong><?php the_title(); ?></strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--△△△ Breadcrumb section △△△-->
+
+        <!--▽▽▽ Content section ▽▽▽-->
+        <section>
+            <div class="p-stdfmt">
+                <div class="p-section">
+                    <div class="p-section__inner">
+                        <div class="p-stdfmt__tit">
+                            <div class="p-tit p-tit__type02">
+                                <h2>
+                                    <strong><?php the_title(); ?></strong>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="p-stdfmt__box">
+                            <div class="p-table">
+                                <div class="p-table__box is_column">
+
+                                    <div style="text-align:left;">
+                                        <p><?php the_content(); ?></p>
+                                        <p style="margin-top:2rem;text-align:right;">
+                                            <span class="day"><?php the_date(); ?> <?php the_time(); ?></span><br>
+                                            カテゴリ: 
+                                            <span class="category"><?php the_category(', '); ?></span>
+                                        </p>
+                                    </div>
+                                    
+                                </div>                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--△△△ Content section △△△-->
+
+    </div>
+    <!--▲ p-main ▲-->
+</div>
+
+<?php get_footer(); ?>

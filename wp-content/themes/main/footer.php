@@ -12,8 +12,6 @@
 </div>
 <!--▲▲ l-navi ▲▲-->
 
-
-
 <!--▼▼ l-footer ▼▼-->
 <div class="l-footer">
 
@@ -247,7 +245,6 @@
                                 <li><i><img src="https://placehold.co/92x105" alt="プライバシーマーク" decoding="async"
                                             loading="lazy"></i>
                                 </li>
-                                <!--<li><i><img src="/img/common/ic_credential_iso01_img01.png" alt="ISO22301" decoding="async" loading="lazy"></i></li>-->
                             </ul>
                         </div>
                         <div class="p-footer__menu">
@@ -284,11 +281,8 @@
 </div>
 <!--▲▲ l-footer ▲▲-->
 
-
-
 </div>
 <!--▲▲▲ l-wrapper ▲▲▲-->
-
 
 </div>
 <!--▲▲▲ l-wrapper ▲▲▲-->
@@ -299,34 +293,21 @@
 <script src="<?php bloginfo('template_directory') ?>/js/script.js?v=001"></script>
 <script src="<?php bloginfo('template_directory') ?>/js/company.js?v=001"></script>
 
-
-
 <script>
     $(function () {
         $('.js_modaal_video').modaal({
             type: 'video'
         });
-    });
-</script>
-<script>
-    $(function () {
+
         $('a[href*="#"]:not(.non-scroll)').on('click', function () {
-            var headerHeight = $('.p-header').outerHeight();//ヘッダーの高さ取得
+            var headerHeight = $('.p-header').outerHeight(); // lấy chiều cao header
             var speed = 500;
-            var href = $(this).prop("href");
-            var hrefPageUrl = href.split("#")[0];
-            var currentUrl = location.href;
-            currentUrl = currentUrl.split("#")[0];
-            if (hrefPageUrl == currentUrl) {
-                href = href.split("#");
-                href = href.pop();
-                href = "#" + href;
-                var target = $(href == "#" || href == "" ? 'html' : href);
+            var href = $(this).attr("href").split("#").pop();
+            var target = $('#' + href);
+            if (target.length) {
                 var position = target.offset().top - headerHeight;
                 $('html,body').animate({ scrollTop: position }, speed, 'swing');
                 return false;
-            } else {
-                return true;
             }
         });
     });
