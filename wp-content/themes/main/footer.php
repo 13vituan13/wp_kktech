@@ -1,7 +1,3 @@
-</div>
-<!--▲▲ l-main ▲▲-->
-
-
 <!--▼▼ l-navi ▼▼-->
 <div class="l-navi">
 
@@ -111,6 +107,7 @@
                                     </dt>
                                     <dd>
                                         <ul>
+                                            <!--<li><a href="/solution/imagegate/index.html"><strong>ImageGate</strong></a></li>-->
                                             <li><a href="/solution/05/index.html"><strong>e-店舗</strong></a></li>
                                         </ul>
                                     </dd>
@@ -208,10 +205,10 @@
                                             <ul>
                                                 <li>　
                                                     <!--<object>
-                                <a href="/smartphone/index.html">
-                                  <strong>NTT Partnership</strong>
-                                </a>
-                              </object>-->
+                          <a href="/smartphone/index.html">
+                            <strong>NTT Partnership</strong>
+                          </a>
+                        </object>-->
                                                 </li>
                                             </ul>
                                         </div>
@@ -250,6 +247,7 @@
                                 <li><i><img src="https://placehold.co/92x105" alt="プライバシーマーク" decoding="async"
                                             loading="lazy"></i>
                                 </li>
+                                <!--<li><i><img src="/img/common/ic_credential_iso01_img01.png" alt="ISO22301" decoding="async" loading="lazy"></i></li>-->
                             </ul>
                         </div>
                         <div class="p-footer__menu">

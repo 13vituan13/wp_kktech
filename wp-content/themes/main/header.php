@@ -75,7 +75,9 @@
                                 </p>
                             </div>
                             <div class="p-header__gnavi">
-                                <div class="p-header__gnavi_menu">
+                                <?php display_custom_menu(); ?>
+
+                                <!-- <div class="p-header__gnavi_menu">
                                     <p>
                                         <span>
                                             <b>
@@ -146,7 +148,7 @@
                                             </a>
                                         </li>
                                     </ul>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -156,7 +158,3 @@
 
         </div>
         <!--▲▲ l-header ▲▲-->
-
-
-        <!--▼▼ l-main ▼▼-->
-        <div class="l-main">
