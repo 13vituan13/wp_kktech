@@ -316,3 +316,112 @@ function custom_excerpt_more($more) {
     return '...';
 }
 add_filter('excerpt_more', 'custom_excerpt_more');
+
+
+/**
+ * ==================================================
+ * 6. SEND EMAIL
+ * ==================================================
+ */
+add_action( 'phpmailer_init', 'send_smtp_email' );
+
+function send_smtp_email( $phpmailer ) {
+    global $wpdb;
+    if ( ! isset( $wpdb ) ) {
+        echo "Error: \$wpdb not available.";
+        return;
+    }
+
+    $config_email = $wpdb->get_row("SELECT * FROM wp_mail_config WHERE id = 1");
+
+    if ($config_email) {
+        $sender_email = $config_email->email;
+        $sender_pass = $config_email->password;
+
+        $phpmailer->isSMTP(); // SMTP protoco to send email.
+
+        $phpmailer->Host       = $config_email->host; // HOST of the SMTP server, here is Gmail [SMTP, POP3, IMAP, SMTPS, POP3S/IMAPS].
+
+        $phpmailer->SMTPAuth   = true; // Turn on SMTP authentication mode.
+
+        $phpmailer->Username   = $sender_email; // Email Sender, here is Admin email.
+
+        $phpmailer->Password   = $sender_pass; // Password-App of Email.
+
+        $phpmailer->SMTPSecure = $config_email->protocol; // Protoco SSL(Secure Sockets Layer, Old, 465, non-security) or TLS(Transport Layer Security, New, 587,security)  to secure the connection.
+
+        $phpmailer->From       = $sender_email;  // Setup Email from email send.
+
+        $phpmailer->FromName   = $config_email->name_from; // Setup Name of sender email.
+
+        $phpmailer->Port       = $config_email->port; // Port gateway SMTP mail server.
+
+        // Add an email address to receive feedback (Reply-To)
+        $phpmailer->addReplyTo( $sender_email, 'Feedback' );
+
+    } else {
+        echo "Error: No data found in the database.";
+    }
+    
+}
+
+// set up content mail to HTML
+add_filter( 'wp_mail_content_type', 'set_my_mail_content_type' );
+function set_my_mail_content_type() {
+    return "text/html";
+}
+
+function send_contact_email() {
+    if (isset($_POST['contactData'])) {
+        $contact_data = json_decode(stripslashes($_POST['contactData']), true);
+
+        if ($contact_data !== null) {
+
+            // Load the email template
+            ob_start();
+            include get_template_directory() . '/email/contact_template.php';
+            $message = ob_get_clean();
+
+            $subject = "【らぽくらぶ】ホームページからのお問い合わせ";
+
+            global $wpdb;
+            if (!isset($wpdb)) {
+                echo "Error: \$wpdb not available.";
+                return;
+            }
+
+            $config_emails = $wpdb->get_results("SELECT email FROM wp_mail_config WHERE id IN (2, 3)"); // Selecting multiple emails
+            $recipient_emails = array();
+            foreach ($config_emails as $config_email) {
+                $recipient_emails[] = $config_email->email;
+            }
+            $recipient_email = implode(',', $recipient_emails); // Combining multiple emails with commas
+
+            $headers = array('Content-Type: text/html; charset=UTF-8');
+
+            $sent = wp_mail($recipient_email, $subject, $message, $headers);
+
+            // Send user
+            $subject_user = "【らぽくらぶ】ホームページからのお問い合わせ";
+            $sent_user = wp_mail($contact_data['contact_email'], $subject_user, $message, $headers);
+
+            if ($sent && $sent_user) {
+                echo json_encode(array('success' => true));
+            } else {
+                echo json_encode(array('success' => false));
+            }
+
+            wp_die();
+        }else {
+            echo json_encode(array('success' => false, 'message' => 'Invalid contact data format.'));
+        }
+    } else {
+        echo json_encode(array('success' => false, 'message' => 'No contact data found.'));
+    }
+}
+
+// For user has been login
+add_action('wp_ajax_send_contact_email', 'send_contact_email');
+
+// For user has not been login
+add_action('wp_ajax_nopriv_send_contact_email', 'send_contact_email');

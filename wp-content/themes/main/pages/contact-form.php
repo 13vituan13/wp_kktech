@@ -274,4 +274,50 @@ get_header();
     <!--▲ p-main ▲-->
 </div>
 <!--▲ l-main ▲-->
+<div id="loading" hidden>
+    <div class="loader">Loading...</div>
+</div>
+<script>
+    var contactData = <?php echo json_encode($contact_data); ?>;
+    function loadStart() {
+        $("#loading").removeAttr("hidden");
+    }
+
+    function loadEnd() {
+        $("#loading").attr("hidden", "hidden");
+    }
+    function goBack() {
+        window.history.back();
+    }
+    function submitContactForm() {
+        loadStart()
+        jQuery.ajax({
+            url: '<?php echo admin_url('admin-ajax.php'); ?>',
+            type: 'POST',
+            data: {
+                action: 'send_contact_email',
+                contactData: JSON.stringify(contactData),
+            },
+            success: function (response) {
+                loadEnd()
+                // Parse JSON response
+                var parsedResponse = JSON.parse(response);
+
+                // Check the 'success' property
+                if (parsedResponse.success) {
+                    window.location.href = '?page_id=969'; // url completed.
+
+                } else {
+                    // Handle failure case
+                    console.log('Email could not be sent.');
+                }
+            },
+            error: function (error) {
+                console.error(error);
+                loadEnd()
+            }
+        });
+    }
+</script>
+
 <?php get_footer() ?>
