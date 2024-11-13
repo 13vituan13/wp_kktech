@@ -66,139 +66,49 @@
               <div class="p-topicstop__box">
                 <div class="js_topicstop">
                   <ul>
-                    <!--左端。6個目Start-->
-                    <li>
-                      <a href="/topics/health-management.html">
-                        <div class="p-topicstop__box_item">
-                          <div class="p-topicstop__box_item--img">
-                            <i><img src="https://placehold.co/280x210" alt=""></i>
-                          </div>
-                          <div class="p-topicstop__box_item--txt">
-                            <div class="p-topicstop__box_item--txt-date">
-                              <p>2023-10-13</p>
-                            </div>
-                            <div class="p-topicstop__box_item--txt-tit">
-                              <p>ミライト・ワン・システムズ 健康経営宣言を制定しました。<br>　</p>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <!--左端。7個目Start-->
-                    <li>
-                      <a href="/topics/trwork-promotion.html">
-                        <div class="p-topicstop__box_item">
-                          <div class="p-topicstop__box_item--img">
-                            <i><img src="https://placehold.co/280x210" alt=""></i>
-                          </div>
-                          <div class="p-topicstop__box_item--txt">
-                            <div class="p-topicstop__box_item--txt-date">
-                              <p>2021-04-27</p>
-                            </div>
-                            <div class="p-topicstop__box_item--txt-tit">
-                              <p>テレワーク推進企業ネットワークに参加しています。<br>　</p>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
+                    <?php
+                      // Tạo một truy vấn WP_Query để lấy các bài viết từ custom post type 'topics'
+                      $args = array(
+                          'post_type' => 'topics', // Custom post type 'topics'
+                          'posts_per_page' => 6, // Số lượng bài viết muốn hiển thị (có thể thay đổi)
+                          'post_status' => 'publish', // Chỉ lấy bài viết đã được công bố
+                          'orderby' => 'date', // Sắp xếp theo ngày đăng
+                          'order' => 'DESC' // Thứ tự giảm dần
+                      );
 
-                    <!--左端。4個目Start-->
-                    <li>
-                      <a href="/topics/tw-tokyo-rule.html">
-                        <div class="p-topicstop__box_item">
-                          <div class="p-topicstop__box_item--img">
-                            <i><img src="https://placehold.co/280x210" alt=""></i>
-                          </div>
-                          <div class="p-topicstop__box_item--txt">
-                            <div class="p-topicstop__box_item--txt-date">
-                              <p>2021-01-07</p>
-                            </div>
-                            <div class="p-topicstop__box_item--txt-tit">
-                              <p>東京都の「テレワーク東京ルール」実践企業に登録されました。</p>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
+                      $query = new WP_Query($args);
 
-                    <!--左端。5個目Start-->
-                    <!--
-                        <li>
-                          <a href="https://www.dell.com/ja-jp/dt/case-studies-customer-stories/miraitsystems.htm#collapse">
-                            <div class="p-topicstop__box_item">
-                              <div class="p-topicstop__box_item--img">
-                                <i><img src="/img/common/topics_pict_004.png" alt=""></i>
-                              </div>
-                              <div class="p-topicstop__box_item--txt">
-                                <div class="p-topicstop__box_item--txt-date">
-                                  <p>2021-02-24</p>
-                                </div>
-                                <div class="p-topicstop__box_item--txt-tit">
-                                  <p>当社のシンクライアント導入がデル社の導入事例で紹介されました</p>
-                                </div>
-                              </div>
-                            </div>
-                          </a>
-                        </li>
-                      -->
-                    <!--左端。1個目Start-->
-                    <li>
-                      <a href="/topics/trwork100.html">
-                        <div class="p-topicstop__box_item">
-                          <div class="p-topicstop__box_item--img">
-                            <i><img src="https://placehold.co/280x210" alt=""></i>
-                          </div>
-                          <div class="p-topicstop__box_item--txt">
-                            <div class="p-topicstop__box_item--txt-date">
-                              <p>2020-10-30</p>
-                            </div>
-                            <div class="p-topicstop__box_item--txt-tit">
-                              <p>総務省「テレワーク先駆者百選」に選ばれました。<br>　</p>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <!--左端。2個目Start-->
-                    <li>
-                      <a href="/topics/actionplan02.html">
-                        <div class="p-topicstop__box_item">
-                          <div class="p-topicstop__box_item--img">
-                            <i><img src="https://placehold.co/280x210" alt=""></i>
-                          </div>
-                          <div class="p-topicstop__box_item--txt">
-                            <div class="p-topicstop__box_item--txt-date">
-                              <p>2024-6-18</p>
-                            </div>
-                            <div class="p-topicstop__box_item--txt-tit">
-                              <p>2023年度の実績情報を公表しました。<br>　</p>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-
-                    <!--左端。3個目Start-->
-                    <li>
-                      <a href="/topics/actionplan.html">
-                        <div class="p-topicstop__box_item">
-                          <div class="p-topicstop__box_item--img">
-                            <i><img src="https://placehold.co/280x210" alt=""></i>
-                          </div>
-                          <div class="p-topicstop__box_item--txt">
-                            <div class="p-topicstop__box_item--txt-date">
-                              <p>2024-4-23</p>
-                            </div>
-                            <div class="p-topicstop__box_item--txt-tit">
-                              <p>新たに「男女の育児休業取得率」を公表しました 。<br>　</p>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-
-
+                      // Kiểm tra nếu có bài viết và bắt đầu vòng lặp
+                      if ($query->have_posts()) :
+                          while ($query->have_posts()) : $query->the_post();
+                      ?>
+                              <li>
+                                  <a href="<?php the_permalink(); ?>">
+                                      <div class="p-topicstop__box_item">
+                                          <div class="p-topicstop__box_item--img">
+                                              <!-- Ở đây bạn có thể thay thế hình ảnh bằng cách sử dụng hình ảnh đại diện -->
+                                              <i><img src="https://placehold.co/280x210" alt="<?php the_title(); ?>"></i>
+                                          </div>
+                                          <div class="p-topicstop__box_item--txt">
+                                              <div class="p-topicstop__box_item--txt-date">
+                                                  <!-- Hiển thị ngày bài viết -->
+                                                  <p><?php echo get_the_date('Y-m-d'); ?></p>
+                                              </div>
+                                              <div class="p-topicstop__box_item--txt-tit">
+                                                  <!-- Hiển thị tiêu đề bài viết -->
+                                                  <p><?php the_title(); ?></p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </a>
+                              </li>
+                      <?php
+                          endwhile;
+                          wp_reset_postdata(); // Đặt lại dữ liệu sau khi vòng lặp kết thúc
+                      else :
+                          echo '<p>Không có bài viết nào.</p>';
+                      endif;
+                    ?>
                   </ul>
                 </div>
               </div>
@@ -206,7 +116,7 @@
                 <div class="p-stdbtn p-stdbtn__clr p-stdbtn__clr_wht">
                   <div class="p-stdbtn__btn">
                     <ul>
-                      <li><a href="/topics/index.html"><strong>一覧をみる</strong></a></li>
+                      <li><a href="<?php echo home_url(path: 'topics'); ?>"><strong>一覧をみる</strong></a></li>
                     </ul>
                   </div>
                 </div>
