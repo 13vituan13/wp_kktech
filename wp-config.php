@@ -56,7 +56,11 @@ define( 'AUTH_SALT',        'put your unique phrase here' );
 define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
 define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
 define( 'NONCE_SALT',       'put your unique phrase here' );
-
+define('WP_TEMP_DIR', ABSPATH . 'wp-content/uploads/temp/');
+define('UPLOADS', 'wp-content/uploads');
+if (!file_exists(WP_TEMP_DIR)) {
+    mkdir(WP_TEMP_DIR, 0755, true);
+}
 /**#@-*/
 
 /**

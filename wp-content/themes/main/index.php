@@ -86,8 +86,13 @@
                                   <a href="<?php the_permalink(); ?>">
                                       <div class="p-topicstop__box_item">
                                           <div class="p-topicstop__box_item--img">
-                                              <!-- Ở đây bạn có thể thay thế hình ảnh bằng cách sử dụng hình ảnh đại diện -->
-                                              <i><img src="https://placehold.co/280x210" alt="<?php the_title(); ?>"></i>
+                                          <i>
+                                              <?php if (has_post_thumbnail()): ?>
+                                                  <?php the_post_thumbnail('full', array('decoding' => 'async', 'loading' => 'lazy')); ?>
+                                              <?php else: ?>
+                                                  <img src="https://placehold.co/280x210" alt="<?php the_title(); ?>">
+                                              <?php endif; ?>
+                                            </i>
                                           </div>
                                           <div class="p-topicstop__box_item--txt">
                                               <div class="p-topicstop__box_item--txt-date">
@@ -96,7 +101,7 @@
                                               </div>
                                               <div class="p-topicstop__box_item--txt-tit">
                                                   <!-- Hiển thị tiêu đề bài viết -->
-                                                  <p><?php the_title(); ?></p>
+                                                  <p><?php echo wp_trim_words(the_title(), 10, '...'); ?></p>
                                               </div>
                                           </div>
                                       </div>

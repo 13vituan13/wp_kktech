@@ -26,7 +26,7 @@ function theme_setup() {
     
     // Kích hoạt tính năng thumbnail cho post/page
     add_theme_support('post-thumbnails');
-    
+
     // Kích hoạt tính năng HTML5
     add_theme_support('html5', array(
         'search-form',

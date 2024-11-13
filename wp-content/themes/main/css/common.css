@@ -5118,11 +5118,16 @@ body[data-page="contact"] .p-header__gnavi_menu > ul > li[data-gnavi="contact"] 
   color: #134A9C;
 }
 
+.p-topicstop__box_item--txt-tit{
+  min-height: 80px;
+}
+
 .p-topicstop__box_item--txt-tit p {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .p-topicstop__btn {
