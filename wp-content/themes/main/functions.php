@@ -54,6 +54,7 @@ function theme_setup() {
         'main-menu' => __('Main Menu', 'custom-theme'),
         'footer-menu' => __('Footer Menu', 'custom-theme')
     ));
+
 }
 add_action('after_setup_theme', 'theme_setup');
 
@@ -320,10 +321,10 @@ add_filter('excerpt_more', 'custom_excerpt_more');
 
 /**
  * ==================================================
- * 6. SEND EMAIL
+ * 7. SEND EMAIL
  * ==================================================
  */
-add_action( 'phpmailer_init', 'send_smtp_email' );
+add_action('phpmailer_init', 'send_smtp_email');
 
 function send_smtp_email( $phpmailer ) {
     global $wpdb;
@@ -362,7 +363,6 @@ function send_smtp_email( $phpmailer ) {
     } else {
         echo "Error: No data found in the database.";
     }
-    
 }
 
 // set up content mail to HTML
@@ -372,52 +372,73 @@ function set_my_mail_content_type() {
 }
 
 function send_contact_email() {
-    if (isset($_POST['contactData'])) {
-        $contact_data = json_decode(stripslashes($_POST['contactData']), true);
 
-        if ($contact_data !== null) {
-
-            // Load the email template
-            ob_start();
-            include get_template_directory() . '/email/contact_template.php';
-            $message = ob_get_clean();
-
-            $subject = "【らぽくらぶ】ホームページからのお問い合わせ";
-
-            global $wpdb;
-            if (!isset($wpdb)) {
-                echo "Error: \$wpdb not available.";
-                return;
-            }
-
-            $config_emails = $wpdb->get_results("SELECT email FROM wp_mail_config WHERE id IN (2, 3)"); // Selecting multiple emails
-            $recipient_emails = array();
-            foreach ($config_emails as $config_email) {
-                $recipient_emails[] = $config_email->email;
-            }
-            $recipient_email = implode(',', $recipient_emails); // Combining multiple emails with commas
-
-            $headers = array('Content-Type: text/html; charset=UTF-8');
-
-            $sent = wp_mail($recipient_email, $subject, $message, $headers);
-
-            // Send user
-            $subject_user = "【らぽくらぶ】ホームページからのお問い合わせ";
-            $sent_user = wp_mail($contact_data['contact_email'], $subject_user, $message, $headers);
-
-            if ($sent && $sent_user) {
-                echo json_encode(array('success' => true));
-            } else {
-                echo json_encode(array('success' => false));
-            }
-
-            wp_die();
-        }else {
-            echo json_encode(array('success' => false, 'message' => 'Invalid contact data format.'));
-        }
-    } else {
-        echo json_encode(array('success' => false, 'message' => 'No contact data found.'));
+    // Check nonce CSRF before processing
+    if (!isset($_POST['contact_nonce']) || 
+        !wp_verify_nonce($_POST['contact_nonce'], 'contact_form_nonce')) {
+        wp_send_json_error('Security check failed');
+        return;
     }
+
+    // Check and get form data
+    if (
+        isset($_POST['user_name']) && 
+        isset($_POST['user_email']) && 
+        isset($_POST['user_tel']) && 
+        isset($_POST['mail_body'])
+    ) {
+        // use `sanitize` function of Wordpress to clean data input, ex: clear HTML tags, normalize special characters, format email... 
+        $contact_data = array(
+            'user_name'     => sanitize_text_field($_POST['user_name']),
+            'user_email'    => sanitize_email($_POST['user_email']),
+            'user_tel'      => sanitize_text_field($_POST['user_tel']),
+            'mail_body'     => sanitize_textarea_field($_POST['mail_body'])
+        );
+
+        // Load email template
+        ob_start(); // use ob_start() to get Content is saved to buffer; if not use ob_start(); The content next code will be printed out , $message = ???
+        include get_template_directory() . '/email/contact_template.php';
+        $message = ob_get_clean(); // Get content from buffer
+
+        $subject = "【らぽくらぶ】ホームページからのお問い合わせ";
+
+        global $wpdb;
+        if (!isset($wpdb)) {
+            wp_send_json_error('Database connection error');
+            return;
+        }
+
+        // Get recipient email from DB
+        // $config_emails = $wpdb->get_results(
+        //     "SELECT email FROM wp_mail_config WHERE id IN (2, 3)"
+        // );
+        
+        // $recipient_emails = array();
+        // foreach ($config_emails as $config_email) {
+        //     $recipient_emails[] = $config_email->email;
+        // }
+        // $recipient_email = implode(',', $recipient_emails);
+
+        $headers = array('Content-Type: text/html; charset=UTF-8');
+
+        // Send for admin
+        // $sent = wp_mail($recipient_email, $subject, $message, $headers);
+
+        // Send for user
+        $subject_user = "【らぽくらぶ】ホームページからのお問い合わせ";
+        $sent_user = wp_mail($contact_data['user_email'], $subject_user, $message, $headers);
+
+        if ($sent_user) {
+            wp_send_json_success('Email sent successfully');
+        } else {
+            wp_send_json_error('Failed to send email');
+        }
+
+    } else {
+        wp_send_json_error('Missing required fields');
+    }
+
+    wp_die();
 }
 
 // For user has been login

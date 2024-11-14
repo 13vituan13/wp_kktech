@@ -34,6 +34,10 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/theme01.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/add2.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/add.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/style.css">
+
+    <!-- Jquery -->
+    <script src="<?php bloginfo('template_directory') ?>/js/jquery.min.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-KBS953BL82"></script>
