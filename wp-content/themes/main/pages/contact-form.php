@@ -67,7 +67,7 @@ get_header();
                                                     name="user_name" 
                                                     class="form-input required" 
                                                     maxlength="30" 
-                                                    data-name="お名前">
+                                                    data-name="お名前" value="">
                                             <p class="error-message"></p>
                                         </dd>
                                     </dl>
@@ -86,7 +86,7 @@ get_header();
                                                    name="user_email" 
                                                    class="form-input required" 
                                                    maxlength="100" 
-                                                   data-name="メールアドレス">
+                                                   data-name="メールアドレス" value="">
                                             <p class="error-message"></p>
                                         </dd>
                                     </dl>
@@ -105,7 +105,7 @@ get_header();
                                                    name="user_tel" 
                                                    class="form-input required" 
                                                    maxlength="20" 
-                                                   data-name="電話番号">
+                                                   data-name="電話番号" value="">
                                             <p class="error-message"></p>
                                         </dd>
                                     </dl>
@@ -269,7 +269,7 @@ jQuery(document).ready(function($) {
 
         const formData = new FormData(this);
         formData.append('action', 'send_contact_email');
-        
+
         $.ajax({
             url: '<?php echo admin_url('admin-ajax.php'); ?>',
             type: 'POST',
@@ -277,19 +277,15 @@ jQuery(document).ready(function($) {
             processData: false,
             contentType: false,
             success: function(response) {
-                try {
-                    const result = JSON.parse(response);
-                    if (result.success) {
-                        window.location.href = '<?php echo home_url('/contact/thanks/'); ?>';
-                    } else {
-                        alert('送信に失敗しました。もう一度お試しください。');
-                    }
-                } catch (e) {
-                    alert('エラーが発生しました。もう一度お試しください。');
+                if (response.success) {
+                    window.location.href = '<?php echo home_url('/contact'); ?>';
+                } else {
+                    alert(response.data.message || '送信に失敗しました。もう一度お試しください。');
                 }
             },
-            error: function(e) {
-                alert('エラーが発生しました。もう一度お試しください。');
+            error: function(xhr) {
+                const errorMessage = xhr.responseJSON?.data?.message || 'エラーが発生しました。もう一度お試しください。';
+                alert(errorMessage);
             },
             complete: function() {
                 loadEnd();

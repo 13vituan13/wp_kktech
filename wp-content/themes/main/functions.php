@@ -5,6 +5,12 @@
  * @package CustomTheme
  * @version 1.0.0
  */
+// Kiểm tra và import PHPMailer nếu chưa được load
+if (!class_exists('PHPMailer\PHPMailer\PHPMailer')) {
+    require ABSPATH . WPINC . '/PHPMailer/PHPMailer.php';
+    require ABSPATH . WPINC . '/PHPMailer/SMTP.php';
+    require ABSPATH . WPINC . '/PHPMailer/Exception.php';
+}
 
 // Ngăn chặn truy cập trực tiếp
 if (!defined('ABSPATH')) {
@@ -324,54 +330,60 @@ add_filter('excerpt_more', 'custom_excerpt_more');
  * 7. SEND EMAIL
  * ==================================================
  */
-add_action('phpmailer_init', 'send_smtp_email');
+// 2. Khởi tạo config SMTP ngay khi WordPress init
+function init_smtp_config() {
+    global $wpdb, $smtp_config;
+    
+    if (!isset($wpdb)) {
+        error_log('WP Database not initialized');
+        return;
+    }
+    
+    // Lấy config từ DB và lưu vào biến global
+    $smtp_config = $wpdb->get_row("SELECT * FROM wp_mail_config WHERE id = 1");
+    
+    if (!$smtp_config) {
+        error_log('SMTP config not found in database');
+        return;
+    }
+    
+    // Đăng ký các hooks cần thiết
+    add_action('phpmailer_init', 'configure_smtp_email');
+    
+    // set up content mail to HTML
+    add_filter('wp_mail_content_type', function() {
+        return "text/html";
+    });
+}
+add_action('init', 'init_smtp_config');
 
-function send_smtp_email( $phpmailer ) {
-    global $wpdb;
-    if ( ! isset( $wpdb ) ) {
-        echo "Error: \$wpdb not available.";
+// 3. Hàm configure SMTP
+function configure_smtp_email($phpmailer) {
+    global $smtp_config;
+    
+    if (!$smtp_config) {
+        error_log('SMTP config not available');
         return;
     }
 
-    $config_email = $wpdb->get_row("SELECT * FROM wp_mail_config WHERE id = 1");
-
-    if ($config_email) {
-        $sender_email = $config_email->email;
-        $sender_pass = $config_email->password;
-
-        $phpmailer->isSMTP(); // SMTP protoco to send email.
-
-        $phpmailer->Host       = $config_email->host; // HOST of the SMTP server, here is Gmail [SMTP, POP3, IMAP, SMTPS, POP3S/IMAPS].
-
-        $phpmailer->SMTPAuth   = true; // Turn on SMTP authentication mode.
-
-        $phpmailer->Username   = $sender_email; // Email Sender, here is Admin email.
-
-        $phpmailer->Password   = $sender_pass; // Password-App of Email.
-
-        $phpmailer->SMTPSecure = $config_email->protocol; // Protoco SSL(Secure Sockets Layer, Old, 465, non-security) or TLS(Transport Layer Security, New, 587,security)  to secure the connection.
-
-        $phpmailer->From       = $sender_email;  // Setup Email from email send.
-
-        $phpmailer->FromName   = $config_email->name_from; // Setup Name of sender email.
-
-        $phpmailer->Port       = $config_email->port; // Port gateway SMTP mail server.
-
-        // Add an email address to receive feedback (Reply-To)
-        $phpmailer->addReplyTo( $sender_email, 'Feedback' );
-
-    } else {
-        echo "Error: No data found in the database.";
+    try {
+        $phpmailer->isSMTP();
+        $phpmailer->Host = $smtp_config->host;
+        $phpmailer->SMTPAuth = true;
+        $phpmailer->Username = $smtp_config->email;
+        $phpmailer->Password = $smtp_config->password;
+        $phpmailer->SMTPSecure = $smtp_config->protocol;
+        $phpmailer->Port = $smtp_config->port;
+        $phpmailer->From = $smtp_config->email;
+        $phpmailer->FromName = $smtp_config->name_from;
+        
+    } catch (Exception $e) {
+        error_log('PHPMailer configuration error: ' . $e->getMessage());
     }
 }
 
-// set up content mail to HTML
-add_filter( 'wp_mail_content_type', 'set_my_mail_content_type' );
-function set_my_mail_content_type() {
-    return "text/html";
-}
-
 function send_contact_email() {
+    global $smtp_config;
 
     // Check nonce CSRF before processing
     if (!isset($_POST['contact_nonce']) || 
@@ -408,21 +420,7 @@ function send_contact_email() {
             return;
         }
 
-        // Get recipient email from DB
-        // $config_emails = $wpdb->get_results(
-        //     "SELECT email FROM wp_mail_config WHERE id IN (2, 3)"
-        // );
-        
-        // $recipient_emails = array();
-        // foreach ($config_emails as $config_email) {
-        //     $recipient_emails[] = $config_email->email;
-        // }
-        // $recipient_email = implode(',', $recipient_emails);
-
         $headers = array('Content-Type: text/html; charset=UTF-8');
-
-        // Send for admin
-        // $sent = wp_mail($recipient_email, $subject, $message, $headers);
 
         // Send for user
         $subject_user = "【らぽくらぶ】ホームページからのお問い合わせ";
